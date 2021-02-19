@@ -1,0 +1,30 @@
+@import "partials/setup";
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image {
+	display: flex;
+	justify-content: center;
+
+	align-items: center;
+
+	flex-direction: column;
+
+	width: fit-content;
+}
+
+img {
+	width: 300px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	padding-left: 5%;
+	font-family: "Courier New", Courier, monospace;
+}
