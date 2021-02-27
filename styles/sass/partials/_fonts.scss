@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&family=Shippori+Mincho&display=swap');
+
+@mixin robotoMono($fontSize, $color) {
+	font-family: 'Roboto Mono', serif;
+	font-size: $fontSize;
+	color: $color;
+}
+
+@mixin roboto($fontSize, $color) {
+	font-family: 'Shippori Mincho', serif;
+	font-size: $fontSize;
+	color: $color;
+}
