@@ -276,6 +276,7 @@ html {
 
 body {
   height: 100vh;
+  min-height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,7 +348,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 60%;
-  height: 300px;
+  min-width: 250px;
+  height: 400px;
   position: relative;
 }
 
@@ -393,7 +395,7 @@ button {
   color: white;
   border: none;
   position: absolute;
-  bottom: -90px;
+  bottom: 0;
   font-family: 'Shippori Mincho', serif;
   font-size: 2rem;
   color: white;
@@ -484,5 +486,12 @@ button:active {
   }
   100% {
     background: #6200b3;
+  }
+}
+
+@media (max-width: 360px) {
+  .circle {
+    width: 300px;
+    height: 300px;
   }
 }
