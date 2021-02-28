@@ -21,6 +21,7 @@ body {
 .bodyBackground {
 	animation: backgrounds 5s infinite alternate-reverse ease;
 	color: white;
+	min-height: 400px;
 
 	a {
 		color: white;
