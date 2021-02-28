@@ -8,14 +8,15 @@
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
 
-<body>
+<body id="body">
+	
 	<div class="image">
 		<img src="./assets/mitch.gif" alt="wizard">
 		<div class="circle"></div>
-		<div class="circle2"></div>
 		<div class="linkContainer">
-			<h2>This site is under construction, but here are some links, in the meantime:</h2>
+			<h2 id="mainTitle">This site is under construction, but here are some links, in the meantime:</h2>
 			<ul>
+
 				<li><a href="https://github.com/mitchelreed" target="blank">github</a></li>
 				<li><a href="https://www.linkedin.com/in/mitch-reed-524612204/" target="blank">linkedIn</a></li>
 				<li><a href="https://twitter.com/madebymitchreed" target="blank">twitter</a></li>
@@ -24,11 +25,31 @@
 				<li><a href="https://smarturl.it/summernighto8" target="blank">summer night 08.mp3</a></li>
 
 			</ul>
-
+			
 			
 		
 		</div>
+		<button id="secret"></button>
 	</div>
+
+
+	<script>
+		let counter = 1
+		document.getElementById('secret').addEventListener('click', () => {
+		counter++
+		console.log(counter)
+
+		if(counter % 2 == 0){
+			document.getElementById('mainTitle').innerText = 'the mystery is better than the answer'
+
+		} else if(counter > 3) {
+			document.getElementById('body').innerHTML = '<p>thanks for stopping by...<a href="mailto:jmitchelreed@gmail.com" target="_blank">lets chat</a></p>'
+			document.getElementById('body').classList.add('bodyBackground');
+		}
+	
+		})
+
+	</script>
 </body>
 
 </html>

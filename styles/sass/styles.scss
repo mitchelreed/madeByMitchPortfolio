@@ -14,7 +14,18 @@ body {
 	justify-content: center;
 	align-items: center;
 	@include robotoMono(1.3rem, $purple);
+	position: relative;
 }
+
+.bodyBackground {
+	animation: backgrounds 5s infinite alternate-reverse ease;
+	color: white;
+
+	a {
+		color: white;
+	}
+}
+
 
 .image {
 	display: flex;
@@ -23,25 +34,28 @@ body {
 	flex-direction: column;
 	width: fit-content;
 	position: relative;
-
 }
 
 img {
 	width: 300px;
 }
 
-
 .circle {
-	background: radial-gradient(circle, rgba(0,124,233,1) 44%, rgba(98,0,179,1) 78%, rgba(0,124,233,0) 100%, rgba(98,0,179,1) 100%);
-	// clip-path: polygon(0 0, 100% 0, 100% 87%, 0 87%);
+	background: radial-gradient(
+		circle,
+		rgba(0, 124, 233, 1) 44%,
+		rgba(98, 0, 179, 1) 78%,
+		rgba(0, 124, 233, 0) 100%,
+		rgba(98, 0, 179, 1) 100%
+	);
 	width: 350px;
 	height: 350px;
 	border-radius: 50%;
 	position: absolute;
 	top: -91px;
 	z-index: -10;
-	opacity: .6;
-	}
+	opacity: 0.6;
+}
 
 .linkContainer {
 	display: flex;
@@ -55,12 +69,12 @@ img {
 		list-style: none;
 		text-align: center;
 		line-height: 20px;
-		padding:7px;
+		padding: 7px;
 	}
 
 	ul {
-		padding:0;
-		margin:0;
+		padding: 0;
+		margin: 0;
 	}
 
 	h2 {
@@ -72,8 +86,8 @@ img {
 	a {
 		text-decoration: none;
 		color: $blue;
-		padding:7px;
-		transition: all .5s ease;
+		padding: 7px;
+		transition: all 0.5s ease;
 
 		&:hover {
 			border: 1px solid $blue;
@@ -81,20 +95,66 @@ img {
 			background-color: white;
 		}
 	}
+}
 
-	@keyframes sun {
-		0% {
-			opacity: 0;
-		}
+button {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: white;
+	color: white;
+	border: none;
+	position: absolute;
+	bottom: -90px;
+	@include roboto(2rem, white);
+	font-weight: bolder;
+	z-index: 20;
+
 	
-		50% {
-			opacity: .3;
-		}
-	
-		70% {
-			opacity: .7;
-		}
+	&:hover {
+		@include roboto(2rem, #007ce9);
+		background-color: orangered;
+		animation: morph 3.5s forwards ease-out;
 	}
-		
+	&:active {
+		box-shadow: -5px 5px 100px -11px rgb(255, 255, 255) inset;
 
+	}
+}
+
+
+@keyframes morph {
+	0% {
+		border-radius: 50%;
+		transform: rotate(0deg);
+		border: 20px solid transparent;
+	}
+
+	25% {
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 30px solid $blue;
+		border-top: 20px solid transparent;
+		transform: rotate(360deg);
+		border-radius: 0;
+	}
+
+	100% {
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 30px solid $blue;
+		border-top: 20px solid transparent;
+		transform: rotate(360deg);
+		border-radius: 0;
+	}
+}
+
+@keyframes backgrounds {
+	0% {
+		background: $blue;
+	}
+
+	100% {
+		background: $purple;
+	}
 }

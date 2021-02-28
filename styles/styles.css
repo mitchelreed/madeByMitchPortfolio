@@ -288,6 +288,16 @@ body {
   font-family: 'Roboto Mono', serif;
   font-size: 1.3rem;
   color: #6200b3;
+  position: relative;
+}
+
+.bodyBackground {
+  animation: backgrounds 5s infinite alternate-reverse ease;
+  color: white;
+}
+
+.bodyBackground a {
+  color: white;
 }
 
 .image {
@@ -322,7 +332,7 @@ img {
   position: absolute;
   top: -91px;
   z-index: -10;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .linkContainer {
@@ -365,8 +375,8 @@ img {
   text-decoration: none;
   color: #007ce9;
   padding: 7px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .linkContainer a:hover {
@@ -375,26 +385,104 @@ img {
   background-color: white;
 }
 
-@-webkit-keyframes sun {
+button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  color: white;
+  border: none;
+  position: absolute;
+  bottom: -90px;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 2rem;
+  color: white;
+  font-weight: bolder;
+  z-index: 20;
+}
+
+button:hover {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 2rem;
+  color: #007ce9;
+  background-color: orangered;
+  -webkit-animation: morph 3.5s forwards ease-out;
+          animation: morph 3.5s forwards ease-out;
+}
+
+button:active {
+  -webkit-box-shadow: -5px 5px 100px -11px white inset;
+          box-shadow: -5px 5px 100px -11px white inset;
+}
+
+@-webkit-keyframes morph {
   0% {
-    opacity: 0;
+    border-radius: 50%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border: 20px solid transparent;
   }
-  50% {
-    opacity: .3;
+  25% {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #007ce9;
+    border-top: 20px solid transparent;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-radius: 0;
   }
-  70% {
-    opacity: .7;
+  100% {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #007ce9;
+    border-top: 20px solid transparent;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-radius: 0;
   }
 }
 
-@keyframes sun {
+@keyframes morph {
   0% {
-    opacity: 0;
+    border-radius: 50%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border: 20px solid transparent;
   }
-  50% {
-    opacity: .3;
+  25% {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #007ce9;
+    border-top: 20px solid transparent;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-radius: 0;
   }
-  70% {
-    opacity: .7;
+  100% {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #007ce9;
+    border-top: 20px solid transparent;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-radius: 0;
+  }
+}
+
+@-webkit-keyframes backgrounds {
+  0% {
+    background: #007ce9;
+  }
+  100% {
+    background: #6200b3;
+  }
+}
+
+@keyframes backgrounds {
+  0% {
+    background: #007ce9;
+  }
+  100% {
+    background: #6200b3;
   }
 }
