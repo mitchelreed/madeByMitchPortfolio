@@ -62,7 +62,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 60%;
+	width: 80%;
 	min-width: 250px;
 	height: 400px;
 	position: relative;
@@ -107,7 +107,7 @@ button {
 	color: white;
 	border: none;
 	position: absolute;
-	bottom: -15px;
+	bottom: -25px;
 	@include roboto(2rem, white);
 	font-weight: bolder;
 	z-index: 20;
