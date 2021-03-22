@@ -3,55 +3,60 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Made By Mitch</title>
 	<link rel="stylesheet" href="./styles/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,500&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;1,600&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/69b2fa3252.js" crossorigin="anonymous"></script>
+	<title>Made By Mitch</title>
 </head>
 
-<body id="body">
+<body>
+	<header class="header">
+		<!-- <h1>hi, i'm mitch reed</h1> -->
+		<div class="headerContainer">
+			<div class="container scrollTwo">
+				<div class="imgContainerMitch before">
+					<img src="./assets/mitch1.jpg" alt="mitch reed">
+				</div>
+				<div class="imgContainerAfter after">
+					<img src="./assets/mitch2.jpg" alt="mitch reed wizard">
+				</div>
+			</div>
 
-	<div class="image">
-		<img src="./assets/mitch.gif" alt="wizard">
-		<div class="circle"></div>
-		<div class="linkContainer">
-			<h2 id="mainTitle">This site is under construction, but here are some links, in the meantime:</h2>
-			<ul>
-
-				<li><a href="https://github.com/mitchelreed" target="blank">github</a></li>
-				<li><a href="https://www.linkedin.com/in/mitch-reed-524612204/" target="blank">linkedIn</a></li>
-				<li><a href="https://twitter.com/madebymitchreed" target="blank">twitter</a></li>
-				<li><a href="https://madebymitch.medium.com/in-conversation-with-donald-hoffman-6e0900d349fa"
-						target="blank">interview w Donald Hoffman</a></li>
-				<li><a href="https://www.youtube.com/watch?v=-vylto_ddTc" target="blank">interview w Tom Campbell</a></li>
-				<li><a href="https://en.wikipedia.org/wiki/Sometimes_a_Great_Notion" target="blank">great book</a></li>
-				<li><a href="https://smarturl.it/summernighto8" target="blank">summer night 08.mp3</a></li>
-
-			</ul>
-
-
+			<p class="bio scroll"><span class="firstLetter"><img src="./assets/star.png" alt=""></span> I'm a
+				renaissance-human: front-end web developer, musician, filmmaker, entreprenuer and forever
+				student. <span class="alterEgo">I've been known to have more than one alter-ego.</span> I aspire to create
+				<em>fun</em>ctional websites with a team of wonderful folks. Currently I am working on: a doc film with a grant
+				from the Canadian Arts Council, music, reading copious amounts of web documentaion.
+			</p>
 
 		</div>
-		<button id="secret"></button>
-	</div>
+	</header>
+
+	<main>
+
+		<section class="projects">
 
 
-	<script>
-		let counter = 1
-		document.getElementById('secret').addEventListener('click', () => {
-			counter++
-			console.log(counter)
 
-			if (counter % 2 == 0) {
-				document.getElementById('mainTitle').innerText = 'the mystery is better than the answer'
+			<svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+				<path fill="#ffa05f" fill-opacity="1" d="M0,128L1440,320L1440,320L0,320Z"></path>
+			</svg>
+		</section>
 
-			} else if (counter > 3) {
-				document.getElementById('body').innerHTML = '<p>thanks for stopping by...<a href="mailto:jmitchelreed@gmail.com" target="_blank">lets chat</a></p>'
-				document.getElementById('body').classList.add('bodyBackground');
-			}
+		<section class="skills">
 
-		})
 
-	</script>
+		</section>
+
+	</main>
+
+	<footer></footer>
+	<script src="./app.js"></script>
 </body>
 
 </html>

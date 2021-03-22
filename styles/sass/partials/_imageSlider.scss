@@ -1,0 +1,21 @@
+
+.container {
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+
+.imgContainerMitch {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+}
+
+img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+

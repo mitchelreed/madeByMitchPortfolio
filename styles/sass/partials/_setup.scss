@@ -209,7 +209,7 @@ html {
 	box-sizing: inherit;
 }
 
-.sr-only {
+.srOnly {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -221,3 +221,13 @@ html {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+

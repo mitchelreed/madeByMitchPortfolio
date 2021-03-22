@@ -1,0 +1,78 @@
+
+.header {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: $primary;
+}
+
+h1 {
+	color: orange;
+	text-transform: uppercase;
+	font-size: 9vw;
+	font-family: "IBM Plex Mono", sans-serif;
+	margin:0;
+	position: relative;
+	bottom: 60px;
+}
+
+.headerContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.bio {
+	width: 33%;
+	max-width: 550px;
+	min-width: 350px;
+	margin-left: 2%;
+	color: white;
+	font-family: "IBM Plex Mono", sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	font-size: 1.8rem;
+}
+
+.firstLetter {
+	border-radius: 50%;
+	margin-right: 3px;
+	img {
+		width: 20px;
+		height: 20px;
+		object-fit: cover;
+		animation: sparkle .5s infinite alternate linear;
+		animation-delay: 2s;
+	}
+}
+
+.alterEgo {
+	display: none;
+	color: $primaryLight;
+}
+
+.projects {
+	height: calc(100vh + 50px);
+	background: $primary;
+	position: relative;
+	
+	.wave {
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+
+.skills {
+	height: calc(100vh + 70px);
+	background: $secondary;
+	position: relative;
+}
+
+footer {
+	height: 70px;
+	background-color: $secondary;
+}

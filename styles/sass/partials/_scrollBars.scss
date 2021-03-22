@@ -1,0 +1,18 @@
+
+html {
+	scrollbar-width: auto;
+	scrollbar-color: $secondary $primary ;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: $primary;     
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $secondary;
+  border-radius: 20px;
+}
