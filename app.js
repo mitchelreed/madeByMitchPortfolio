@@ -6,15 +6,15 @@ const after = document.querySelector(".after")
 const container = document.querySelector(".container")
 
 const dragSlider = (e) => {
-	let  xPos = e.layerX;
+	let xPos = e.layerX;
 	before.style.width = xPos + "px"
 
-	if(xPos < 30) {
+	if (xPos < 30) {
 		before.style.width = 0
 		document.querySelector(".alterEgo").style.display = "inline"
 	}
 
-	if(xPos > 270){
+	if (xPos > 270) {
 		before.style.width = 300 + "px"
 		document.querySelector(".alterEgo").style.display = "none"
 	}
@@ -28,7 +28,8 @@ container.addEventListener('mousemove', dragSlider)
 
 // parallax
 
-window.addEventListener('scroll', function(e) {
+// on paragraph
+window.addEventListener('scroll', function (e) {
 
 	const target = document.querySelector('.scroll')
 
@@ -40,7 +41,8 @@ window.addEventListener('scroll', function(e) {
 
 })
 
-window.addEventListener('scroll', function(e) {
+// on first circle
+window.addEventListener('scroll', function (e) {
 
 	const target = document.querySelector('.circleScroll')
 
@@ -52,7 +54,8 @@ window.addEventListener('scroll', function(e) {
 
 })
 
-window.addEventListener('scroll', function(e) {
+// on second circle
+window.addEventListener('scroll', function (e) {
 
 	const target = document.querySelector('.circleScrollTwo')
 
@@ -63,3 +66,24 @@ window.addEventListener('scroll', function(e) {
 	target.style.transform = `translate3d( ${rate}px, 0px, 0px)`
 
 })
+
+// burger menu + nav
+const menuButton = document.querySelector('.menuButton')
+const menuBurger = document.querySelector('.menuBurger')
+const nav = document.querySelector('.nav')
+
+let menuOpen = false;
+
+menuButton.addEventListener('click', () => {
+	if (!menuOpen) {
+		menuButton.classList.add('open')
+		nav.style.transform = 'translateX(0px)'
+		menuOpen = true
+	} else {
+		menuButton.classList.remove('open')
+		nav.style.transform = 'translateX(500px)'
+		menuOpen = false
+	}
+	
+})
+
