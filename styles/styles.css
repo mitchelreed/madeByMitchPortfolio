@@ -299,6 +299,10 @@ img {
      object-fit: cover;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,6 +515,19 @@ h1 {
           flex-direction: column;
 }
 
+h4 {
+  font-size: 2.9vw;
+  width: 50%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #4f359b;
+  line-height: 1.5;
+  margin-right: 25px;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
 .toolKit {
   width: 80%;
   min-height: 400px;
@@ -522,6 +539,15 @@ h1 {
 .toolKit img {
   width: 80px;
   height: 80px;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.toolKit .reactIcon:hover {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-animation: reactSpin 6s infinite linear forwards;
+          animation: reactSpin 6s infinite linear forwards;
 }
 
 .toolKit ul {
@@ -529,12 +555,11 @@ h1 {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
   gap: 20px;
   width: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
+  border-radius: 20px;
 }
 
 .toolKit li {
@@ -549,6 +574,14 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.toolKit li:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  text-shadow: 10px 7px 14px rgba(27, 11, 85, 0.6);
 }
 
 .toolKit li p {
@@ -581,11 +614,11 @@ footer .madeByMitch {
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: #4f359b;
+  color: #3c2875;
 }
 
 footer .madeByMitch:visited {
-  color: #4f359b;
+  color: #3c2875;
 }
 
 footer .madeByMitch:hover {
@@ -607,11 +640,11 @@ footer .madeByMitch:hover {
 
 .contactPoints a {
   text-decoration: none;
-  color: #4f359b;
+  color: #3c2875;
 }
 
 .contactPoints a:visited {
-  color: #4f359b;
+  color: #3c2875;
 }
 
 .contactPoints a:hover {
@@ -721,5 +754,35 @@ body::-webkit-scrollbar-thumb {
   100% {
     -webkit-transform: translateX(2000px);
             transform: translateX(2000px);
+  }
+}
+
+@-webkit-keyframes reactSpin {
+  from {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: rotate(0deg) scale(1.1);
+            transform: rotate(0deg) scale(1.1);
+  }
+  to {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes reactSpin {
+  from {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: rotate(0deg) scale(1.1);
+            transform: rotate(0deg) scale(1.1);
+  }
+  to {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
   }
 }

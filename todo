@@ -1,0 +1,11 @@
+- add hamburger menu for: 
+	- contact
+	- projects
+	- skills
+
+- add a contact form
+	- hook it up with form spree
+
+- make the skills scale a tad on hover and add box shadow, for interactivity
+
+- responsiveness
