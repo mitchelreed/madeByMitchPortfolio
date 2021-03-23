@@ -16,24 +16,35 @@
 
 <body>
 	<header class="header">
-		<!-- <h1>hi, i'm mitch reed</h1> -->
+		<h1 id="mainTitle">HI, I'M MITCH REED</h1>
 		<div class="headerContainer">
-			<div class="container scrollTwo">
-				<div class="imgContainerMitch before">
-					<img src="./assets/mitch1.jpg" alt="mitch reed">
+			<div class="spacer"></div>
+			<div class="imageAndP">
+				<div class="container">
+					<div class="imgContainerMitch before">
+						<img src="./assets/mitch1.jpg" alt="mitch reed portrait">
+					</div>
+					<div class="imgContainerAfter after">
+						<img src="./assets/mitch2.jpg" alt="wizard gif">
+					</div>
 				</div>
-				<div class="imgContainerAfter after">
-					<img src="./assets/mitch2.jpg" alt="mitch reed wizard">
+
+				<p class="bio scroll"><span class="firstLetter"><img src="./assets/star.png" alt=""></span> I'm a front-end web developer, musician, filmmaker, entreprenuer and forever
+					student. <span class="alterEgo">I've been known to have more than one alter-ego.</span> I aspire to create
+					<em>fun</em>ctional websites with teams of wonderful folks. Currently I am working on: a doc film with a grant
+					from the Canadian Arts Council, music, reading copious amounts of web documentaion.
+				</p>
+			</div>
+			<div class="circleContainer">
+				<i class="fas fa-arrow-down"></i>
+				<div class="circle circleScroll"></div>
+				<div class="circleTwo circleScrollTwo"></div>
+				<div class="portal">
+					<a target="_blank" href="https://open.spotify.com/album/3M7UJQ4XMy9Ck9g78zNMnf?si=5VvhxAtdQaGyaQmtK7DKwg">
+						<img src="./assets/spiral.png" alt="spiral">
+					</a>
 				</div>
 			</div>
-
-			<p class="bio scroll"><span class="firstLetter"><img src="./assets/star.png" alt=""></span> I'm a
-				renaissance-human: front-end web developer, musician, filmmaker, entreprenuer and forever
-				student. <span class="alterEgo">I've been known to have more than one alter-ego.</span> I aspire to create
-				<em>fun</em>ctional websites with a team of wonderful folks. Currently I am working on: a doc film with a grant
-				from the Canadian Arts Council, music, reading copious amounts of web documentaion.
-			</p>
-
 		</div>
 	</header>
 
@@ -41,6 +52,25 @@
 
 		<section class="projects">
 
+			<div class="projectsContainer">
+
+				<div class="project">
+					<h2>Fiction Face/Off</h2>
+				</div>
+
+				<div class="project">
+					<h2>Strain Explorer</h2>
+				</div>
+
+				<div class="project">
+					<h2>Passing Micro Site</h2>
+				</div>
+				
+				<div class="project">
+					<h2>Bits of Wisdom</h2>
+				</div>
+
+			</div>
 
 
 			<svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -51,13 +81,59 @@
 		</section>
 
 		<section class="skills">
-
+			<div class="toolKit">
+				<ul>
+					<li>
+						<img src="./assets/css.png" alt="css">
+						<p>CSS</p>
+					</li>
+					<li>
+						<img src="./assets/html.png" alt="html">
+						<p>HTML 5</p>
+					</li>
+					<li>
+						<img src="./assets/javascript.png" alt="javascript">
+						<p>JAVASCRIPT</p>
+					</li>
+					<li>
+						<img src="./assets/react.png" alt="react">
+						<p>REACT</p>
+					</li>
+					<li>
+						<img src="./assets/sass.png" alt="sass">
+						<P>SASS</P>
+					</li>
+					<li>
+						<img src="./assets/firebase.png" alt="firebase">
+						<p>FIREBASE</p>
+					</li>
+					<li>
+						<img src="./assets/jQuery.png" alt="jQuery">
+						<p>JQUERY</p>
+					</li>
+					<li>
+						<img src="./assets/creative-cloud.png" alt="adobe creative cloud">
+						<P>CREATIVE CLOUD</P>
+					</li>
+					<li>
+						<img src="./assets/accessibility.png" alt="accesibility">
+						<P>A11Y</P>
+					</li>
+				</ul>
+			</div>
 
 		</section>
 
 	</main>
 
-	<footer></footer>
+	<footer>
+		<div class="contactPoints">
+			<a href="https://madebymitch.medium.com/" target="_blank"><i class="fab fa-medium"></i></a>
+			<a href="https://www.linkedin.com/in/mitch-reed-524612204/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://github.com/mitchelreed" target="_blank"><i class="fab fa-github-square"></i></a>
+		</div>
+		<a class="madeByMitch" href="#mainTitle">made by mitch</a>
+	</footer>
 	<script src="./app.js"></script>
 </body>
 

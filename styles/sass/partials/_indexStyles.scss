@@ -1,39 +1,51 @@
-
+// HEADER START
 .header {
 	display: flex;
 	height: 100vh;
+	min-height: 600px;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	background-color: $primary;
+	position: relative;
 }
 
-h1 {
-	color: orange;
-	text-transform: uppercase;
-	font-size: 9vw;
-	font-family: "IBM Plex Mono", sans-serif;
-	margin:0;
-	position: relative;
-	bottom: 60px;
+.spacer {
+	width: 100%;
+	height: 100px;
 }
 
 .headerContainer {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+	flex-direction: column;
 	width: 100%;
 }
 
+h1 {
+	color: $secondary;
+	font-size: 5vw;
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 900;
+	position: absolute;
+	top: 0;
+}
+
+.imageAndP {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .bio {
-	width: 33%;
-	max-width: 550px;
-	min-width: 350px;
-	margin-left: 2%;
-	color: white;
+	width: 33vw;
+	min-width: 390px;
+	margin-left: 3%;
+	color: $text;
 	font-family: "IBM Plex Mono", sans-serif;
 	font-weight: 400;
-	line-height: 1.5;
+	line-height: 1.6;
 	font-size: 1.8rem;
 }
 
@@ -44,35 +56,202 @@ h1 {
 		width: 20px;
 		height: 20px;
 		object-fit: cover;
-		animation: sparkle .5s infinite alternate linear;
+		animation: sparkle 0.5s infinite alternate linear;
 		animation-delay: 2s;
 	}
 }
 
+// sentence that pops up with the photo slider
 .alterEgo {
 	display: none;
 	color: $primaryLight;
 }
 
-.projects {
-	height: calc(100vh + 50px);
-	background: $primary;
+// the circle
+.circleContainer {
 	position: relative;
-	
-	.wave {
+
+	.fas {
 		position: absolute;
-		bottom: 0;
+		bottom: 52px;
+		right: 30px;
+		color: white;
+		animation: upDown 1s infinite alternate ease;
 	}
 }
 
+.circle {
+	background: $secondary;
+	border-bottom-left-radius: $size * 2;
+	border-top-left-radius: $size * 2;
+	height: $size * 2;
+	width: $size;
+	z-index: 10;
+	position: relative;
+	top: 70px;
+}
 
+.circleTwo {
+	background: $secondary;
+	border-bottom-right-radius: $size * 2;
+	border-top-right-radius: $size * 2;
+	height: $size * 2;
+	width: $size;
+	margin-left: 35px;
+	position: relative;
+	z-index: 10;
+}
+
+// spiral portal to sublimation
+.portal {
+	cursor: pointer;
+	position: absolute;
+	bottom: 9px;
+	right: 17px;
+	z-index: 4;
+
+	img {
+		width: 35px;
+		height: 35px;
+		animation: spin 5s infinite linear;
+	}
+}
+// HEADER END
+
+// PROJECT SECTION
+.projects {
+	min-height: calc(100vh + 50px);
+	height: auto;
+	background: $primary;
+	padding-top: 35px;
+
+	.wave {
+		position: relative;
+		bottom: -4px;
+	}
+}
+
+.projectsContainer {
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.project {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	height: 300px;
+	width: 80%;
+	margin-bottom: 35px;
+	border-radius: 20px;
+	border: 3px solid $secondary;
+
+	h2 {
+		color: $text;
+		font-family: "IBM Plex Mono", sans-serif;
+		font-weight: 600;
+		font-size: 3rem;
+		// text-shadow: 3px 3px 18px rgba(255,255,255,0.19);
+	}
+}
+
+// PROJECT END
+
+// SKILL SECTION
 .skills {
 	height: calc(100vh + 70px);
 	background: $secondary;
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.toolKit {
+	width: 80%;
+	min-height: 400px;
+	display: flex;
+
+
+	img {
+		width: 80px;
+		height: 80px;
+	}
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		gap: 20px;
+		width: 100%;
+		align-content: center;
+	}
+
+	li {
+		display: flex;
+		align-items: center;
+		list-style: none;
+		flex-direction: column;
+
+		p {
+			padding: 10px;
+			color: $primary;
+			font-family: 'IBM Plex Mono', sans-serif;
+			font-size: 1.5rem;
+			font-weight: 900;
+		}
+	}
 }
 
 footer {
 	height: 70px;
 	background-color: $secondary;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.madeByMitch {
+		font-family: "IBM Plex Mono", sans-serif;
+		color: $primary;
+		font-size: 1.7rem;
+		font-weight: 500;
+		padding: 0;
+		margin: 0;
+		text-decoration: none;
+		color: $primary;
+		&:visited {
+			color: $primary;
+		}
+
+		&:hover {
+			color: lighten($primary, 10%);
+		}
+	}
+}
+
+.contactPoints {
+	font-size: 3rem;
+	padding-right: 10px;
+	display: flex;
+
+	i {
+		display: block;
+		padding-right: 5px;
+	}
+
+	a {
+		text-decoration: none;
+		color: $primary;
+		&:visited {
+			color: $primary;
+		}
+
+		&:hover {
+			color: lighten($primary, 10%);
+		}
+	}
 }

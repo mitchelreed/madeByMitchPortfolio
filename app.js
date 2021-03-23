@@ -26,7 +26,7 @@ container.addEventListener('mousemove', dragSlider)
 // image slider code end
 
 
-// parallax paragraph
+// parallax
 
 window.addEventListener('scroll', function(e) {
 
@@ -37,5 +37,29 @@ window.addEventListener('scroll', function(e) {
 	let rate = scrolled * 0.3
 
 	target.style.transform = `translate3d(0px, -${rate}px, 0px)`
+
+})
+
+window.addEventListener('scroll', function(e) {
+
+	const target = document.querySelector('.circleScroll')
+
+	let scrolled = window.pageYOffset
+
+	let rate = scrolled * .06
+
+	target.style.transform = `translate3d( -${rate}px, 0px, 0px)`
+
+})
+
+window.addEventListener('scroll', function(e) {
+
+	const target = document.querySelector('.circleScrollTwo')
+
+	let scrolled = window.pageYOffset
+
+	let rate = scrolled * .06
+
+	target.style.transform = `translate3d( ${rate}px, 0px, 0px)`
 
 })

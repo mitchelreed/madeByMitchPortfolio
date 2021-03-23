@@ -7,3 +7,34 @@
 		transform: scale(1.1);
 	}
 }
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes upDown {
+	from {
+		transform: translateY(-5px);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes ufo {
+	0% {
+		transform: translateX(-500px);
+	}
+
+	100% {
+		transform: translateX(2000px);
+	}
+}
+
