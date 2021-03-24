@@ -1,11 +1,24 @@
-- add hamburger menu for: 
-	- contact
-	- projects
-	- skills
+✔ add hamburger menu for: @done(21-03-23 18:57)
+	✔ contact @done(21-03-23 18:57)
+	✔ projects @done(21-03-23 18:57)
+	✔ skills @done(21-03-23 18:57)
 
-- add a contact form
-	- hook it up with form spree
+✔ add a contact form @done(21-03-24 10:12)
+	✔ hook it up with form spree / javascript @done(21-03-24 12:24)
 
-- make the skills scale a tad on hover and add box shadow, for interactivity
+✔ make the skills scale a tad on hover and add box shadow, for interactivity @done(21-03-23 18:57)
+
+✔ add smooth scroll with CSS @done(21-03-24 14:32)
+
+✔ add some animate on scroll stuff? - NO @done(21-03-24 18:51)
+
+- add sweet hover state on my submit form button
+
+- add project information into project sections with laptop screen
+
+✔ dynamically change the colour of my burger menu for the diff sections @done(21-03-24 18:51)
 
 - responsiveness
+	- set a MQ for the h4 in skills section so its fixed pixels at a certain width otherwise its absurd!
+	- add a MQ for super large screens to set a new min-height
+	✔ add a wrapper with loads of give @done(21-03-24 14:53)

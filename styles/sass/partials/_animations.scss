@@ -49,3 +49,17 @@
 		transform: rotate(360deg) scale(1);
 	}
 }
+
+@keyframes status {
+	0% {
+		opacity: 1;
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}

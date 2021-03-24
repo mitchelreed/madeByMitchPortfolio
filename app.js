@@ -1,3 +1,4 @@
+
 // image slider code
 
 const slider = document.querySelector(".slider")
@@ -23,7 +24,6 @@ const dragSlider = (e) => {
 
 container.addEventListener('mousemove', dragSlider)
 
-// image slider code end
 
 
 // parallax
@@ -87,3 +87,80 @@ menuButton.addEventListener('click', () => {
 	
 })
 
+// contact form
+
+  window.addEventListener("DOMContentLoaded", function() {
+
+    // get the form elements defined in your form HTML above
+    
+    let form = document.getElementById("myForm");
+    let status = document.getElementById("status");
+
+    // Success and Error functions for after the form is submitted
+    
+    function success() {
+      form.reset();
+      status.innerHTML = "I look forward to chatting with you (✿◠‿◠)";
+      status.classList.add("success");
+    }
+
+    function error() {
+      status.innerHTML = "Oops! There was a problem.";
+      status.classList.add("error");
+    }
+
+    // handle the form submission event
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      let data = new FormData(form);
+      ajax(form.method, form.action, data, success, error);
+    });
+  });
+  
+  // helper function for sending an AJAX request
+
+  function ajax(method, url, data, success, error) {
+    let xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }
+
+// to dynamically change the burger menu over purple or orange
+	const burger = document.querySelector(".menuBurger");
+	const burgerBefore = document.querySelector(".menuBurgerBefore");
+	const burgerAfter = document.querySelector(".menuBurgerAfter");
+	const sectionOne = document.querySelector(".toolKit");
+	const sectionOneOptions = {
+		threshold: .6,
+		rootMargin: "300px 0px 0px 0px"
+	};
+	
+	const sectionOneObserver = new IntersectionObserver(function(
+		entries,
+		sectionOneObserver
+	) {
+		entries.forEach(entry => {
+			console.log(entry.target)
+			if (entry.isIntersecting) {
+				burger.classList.add("burgerSwap");
+				burgerBefore.classList.add("burgerSwap");
+				burgerAfter.classList.add("burgerSwap");
+			} else {
+				burger.classList.remove("burgerSwap");
+				burgerBefore.classList.remove("burgerSwap");
+				burgerAfter.classList.remove("burgerSwap");
+			}
+		});
+	}, sectionOneOptions);
+	
+	sectionOneObserver.observe(sectionOne);
