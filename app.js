@@ -141,7 +141,7 @@ menuButton.addEventListener('click', () => {
 	const burgerAfter = document.querySelector(".menuBurgerAfter");
 	const sectionOne = document.querySelector(".toolKit");
 	const sectionOneOptions = {
-		threshold: .6,
+		threshold: .7,
 		rootMargin: "300px 0px 0px 0px"
 	};
 	
