@@ -27,8 +27,6 @@
 
 - add links to project buttons
 
-- responsiveness
+✔ responsiveness @done(21-03-25 19:46)
 	- set a MQ for the h4 in skills section so its fixed pixels at a certain width otherwise its absurd!
-	- add a MQ for super large screens to set a new min-height
-	- add MQ for max-height to control the h1 overlap
 	✔ add a wrapper with loads of give @done(21-03-24 14:53)

@@ -253,6 +253,7 @@ h1 {
 		border-radius: 5px;
 		color: $text;
 		transition: all 0.7s ease;
+		cursor: pointer;
 
 		&:hover {
 			transform: scale(1.1);
