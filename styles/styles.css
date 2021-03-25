@@ -307,6 +307,10 @@ body {
   overflow-x: hidden;
 }
 
+.mobileImage {
+  display: none;
+}
+
 .wrapper {
   max-width: 1600px;
   margin: 0 auto;
@@ -471,6 +475,7 @@ h1 {
 
 .projectsContainer {
   padding: 5%;
+  padding-bottom: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,7 +503,7 @@ h1 {
   padding: 20px;
   height: 400px;
   width: 80%;
-  margin-bottom: 35px;
+  margin-bottom: 55px;
   border-radius: 20px;
   border: 3px solid #ffa05f;
 }
@@ -508,6 +513,33 @@ h1 {
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 600;
   font-size: 3rem;
+  margin-right: 30px;
+  padding: 5px;
+}
+
+.projectHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid ghostwhite;
+}
+
+.projectHeader i {
+  font-size: 3.5rem;
+  color: ghostwhite;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.projectHeader p {
+  font-size: 2rem;
+  color: ghostwhite;
+  font-weight: 400;
+  font-family: "IBM Plex Mono", sans-serif;
 }
 
 .projectContentContainer {
@@ -519,19 +551,93 @@ h1 {
           align-items: center;
   width: 100%;
   height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .projectContentContainer img {
   width: 50%;
   border-radius: 5px;
+  max-width: 450px;
 }
 
 .projectContentContainer p {
-  width: 50%;
-  padding-left: 20px;
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 2rem;
   color: #ffa05f;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.projectButtons {
+  padding-left: 20px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.codeLinks {
+  margin-top: 10px;
+  width: 60%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.codeLinks a {
+  font-family: "IBM Plex Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100px;
+  font-size: 1.9rem;
+  font-weight: 500;
+  background: #36246a;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: ghostwhite;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.codeLinks a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #29ff29;
+}
+
+.codeLinks .liveButton {
+  margin-right: 10px;
+}
+
+.notePad,
+.wisdom {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.notePad p,
+.wisdom p {
+  padding-left: 0;
+  padding-right: 20px;
 }
 
 .skills {
@@ -560,7 +666,7 @@ h1 {
 
 h4 {
   font-size: 2.9vw;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   margin-bottom: 30px;
   color: #4f359b;
@@ -584,13 +690,22 @@ h4 {
 .toolKit img {
   width: 80px;
   height: 80px;
-  -webkit-transition: all .7s ease;
-  transition: all .7s ease;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.toolKit i {
+  font-size: 7rem;
+  color: ghostwhite;
+}
+
+.toolKit i.reactIcon {
+  color: #3590d5;
 }
 
 .toolKit .reactIcon:hover {
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-animation: reactSpin 6s infinite linear forwards;
           animation: reactSpin 6s infinite linear forwards;
 }
@@ -619,8 +734,8 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .toolKit li:hover {
@@ -632,7 +747,7 @@ h4 {
 .toolKit li p {
   padding: 10px;
   color: #4f359b;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
 }
@@ -865,6 +980,7 @@ body::-webkit-scrollbar-thumb {
   width: 40px;
   height: 40px;
   z-index: 50;
+  cursor: pointer;
 }
 
 .menuButton {
@@ -884,7 +1000,6 @@ body::-webkit-scrollbar-thumb {
           flex-direction: column;
   width: 40px;
   height: 40px;
-  cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -925,6 +1040,18 @@ body::-webkit-scrollbar-thumb {
 
 .burgerSwap {
   background: #4f359b;
+}
+
+.burgerBorder {
+  background-color: #4f359b;
+}
+
+.burgerBorder a {
+  color: #ffa05f;
+}
+
+.burgerBorder a:hover {
+  color: #f86500;
 }
 
 /*  animation classes */
@@ -1115,6 +1242,13 @@ button {
   font-family: 'IBM Plex Mono', sans-serif;
   color: #4f359b;
   font-weight: 800;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+button:hover {
+  background-color: #4f359b;
+  color: #ffa05f;
 }
 
 button:active {
@@ -1180,6 +1314,179 @@ input {
           justify-content: center;
   -webkit-animation: status 5s ease forwards;
           animation: status 5s ease forwards;
+}
+
+@media (max-width: 850px) {
+  .header {
+    min-height: 700px;
+  }
+  header h1 {
+    font-size: 5vw;
+    position: relative;
+  }
+  header .spacer {
+    display: none;
+  }
+  .imageAndP {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bio {
+    margin: 0;
+    margin-top: 20px;
+    width: 85%;
+    min-width: none;
+  }
+  .project {
+    height: auto;
+  }
+  .projectContentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectContentContainer p {
+    padding-top: 20px;
+    text-align: center;
+    padding-right: 0;
+  }
+  .projectContentContainer img {
+    margin-top: 20px;
+    width: 75%;
+  }
+  .projectButtons {
+    width: 80%;
+    padding: 0;
+  }
+  .toolKit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .toolKit ul {
+    gap: 5px;
+  }
+  .skills {
+    min-height: 850px;
+  }
+  .skillsTitleContainer {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skillsTitleContainer h4 {
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    font-size: 3rem;
+  }
+  .contact {
+    height: auto;
+  }
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactContainer img {
+    width: 100%;
+    height: 175px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+    padding: 0;
+    margin: 0;
+  }
+  .formContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .projectHeader {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projectHeader h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 5vw;
+    margin: 0;
+  }
+  .skillsTitleContainer {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skillsTitleContainer h4 {
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    font-size: 2.5rem;
+  }
+  .contact img {
+    display: none;
+  }
+  .bio {
+    margin: 0;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    width: 85%;
+    min-width: 100px;
+    text-align: center;
+  }
+  .circleContainer {
+    top: -55px;
+  }
+}
+
+@media (max-width: 460px) {
+  header h1 {
+    position: relative;
+  }
+  .mobileImage {
+    display: block;
+  }
+  .mobileImage img {
+    width: 200px;
+    height: 200px;
+  }
+  .spacer {
+    display: none;
+  }
+  .container {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    height: 750px;
+  }
+  .header h1 {
+    margin-bottom: 20px;
+  }
+  .toolKit ul {
+    gap: 0;
+  }
+  .toolKit ul li img {
+    width: 50px;
+    height: 50px;
+  }
+  .toolKit ul li i {
+    font-size: 5.5rem;
+  }
+  .toolKit ul li p {
+    font-size: 1.2rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce), (update: slow) {

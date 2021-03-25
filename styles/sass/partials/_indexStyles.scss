@@ -6,6 +6,11 @@ body {
 	overflow-x: hidden;
 }
 
+.mobileImage {
+	display: none;
+}
+
+
 .wrapper {
 	max-width: 1600px;
 	margin: 0 auto;
@@ -22,7 +27,6 @@ body {
 	flex-direction: column;
 	background-color: $primary;
 	position: relative;
-
 }
 
 // creating space between h1 and header content
@@ -149,6 +153,7 @@ h1 {
 
 .projectsContainer {
 	padding: 5%;
+	padding-bottom: 0px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -162,7 +167,7 @@ h1 {
 	padding: 20px;
 	height: 400px;
 	width: 80%;
-	margin-bottom: 35px;
+	margin-bottom: 55px;
 	border-radius: 20px;
 	border: 3px solid $secondary;
 
@@ -171,6 +176,29 @@ h1 {
 		font-family: "IBM Plex Mono", sans-serif;
 		font-weight: 600;
 		font-size: 3rem;
+		margin-right: 30px;
+		padding: 5px;
+	}
+}
+
+.projectHeader {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	border-bottom: 1px solid $text;
+
+	i {
+		font-size: 3.5rem;
+		color: $text;
+		margin-right: 10px;
+		margin-bottom: 5px;
+	}
+
+	p {
+		font-size: 2rem;
+		color: $text;
+		font-weight: 400;
+		font-family: "IBM Plex Mono", sans-serif;
 	}
 }
 
@@ -179,18 +207,71 @@ h1 {
 	align-items: center;
 	width: 100%;
 	height: 100%;
+	justify-content: space-evenly;
 
 	img {
 		width: 50%;
 		border-radius: 5px;
+		max-width: 450px;
 	}
 
 	p {
-		width: 50%;
-		padding-left: 20px;
-		font-family: "IBM Plex Mono", sans-serif;
+		font-family: "IBM Plex Sans", sans-serif;
 		font-size: 2rem;
 		color: $secondary;
+		line-height: 1.5;
+		font-weight: 600;
+	}
+}
+
+.projectButtons {
+	padding-left: 20px;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.codeLinks {
+	margin-top: 10px;
+	width: 60%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+	a {
+		font-family: "IBM Plex Sans", sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		width: 100px;
+		font-size: 1.9rem;
+		font-weight: 500;
+		background: darken($primary, 13%);
+		padding: 5px;
+		text-decoration: none;
+		border-radius: 5px;
+		color: $text;
+		transition: all 0.7s ease;
+
+		&:hover {
+			transform: scale(1.1);
+			color: lighten(green, 33%);
+		}
+	}
+
+	.liveButton {
+		margin-right: 10px;
+	}
+}
+
+.notePad,
+.wisdom {
+	flex-direction: row-reverse;
+
+	p {
+		padding-left: 0;
+		padding-right: 20px;
 	}
 }
 
@@ -214,7 +295,7 @@ h1 {
 
 h4 {
 	font-size: 2.9vw;
-	font-family: 'IBM Plex Sans', sans-serif;
+	font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 700;
 	margin-bottom: 30px;
 	color: $primary;
@@ -230,17 +311,24 @@ h4 {
 	width: 80%;
 	min-height: 400px;
 	display: flex;
-	
 
 	img {
 		width: 80px;
 		height: 80px;
-		transition: all .7s ease;
+		transition: all 0.7s ease;
+	}
 
+	i {
+		font-size: 7rem;
+		color: $text;
+	}
+
+	i.reactIcon {
+		color: rgb(53, 144, 213);
 	}
 
 	.reactIcon:hover {
-		transition: all .5s ease;
+		transition: all 0.5s ease;
 		animation: reactSpin 6s infinite linear forwards;
 	}
 
@@ -258,23 +346,22 @@ h4 {
 		align-items: center;
 		list-style: none;
 		flex-direction: column;
-		transition: all .5s ease;
+		transition: all 0.5s ease;
 
 		&:hover {
 			transform: scale(1.08);
-			text-shadow: 10px 7px 14px rgba(27,11,85,0.6);
+			text-shadow: 10px 7px 14px rgba(27, 11, 85, 0.6);
 		}
 
 		p {
 			padding: 10px;
 			color: $primary;
-			font-family: 'IBM Plex Mono', sans-serif;
+			font-family: "IBM Plex Mono", sans-serif;
 			font-size: 1.5rem;
 			font-weight: 900;
 		}
 	}
 }
-
 
 footer {
 	height: 70px;

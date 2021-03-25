@@ -12,19 +12,23 @@
 
 ✔ add some animate on scroll stuff? - NO @done(21-03-24 18:51)
 
-- add sweet hover state on my submit form button
+✔ add sweet hover state on my submit form button @done(21-03-25 14:40)
 
-- add project information into project sections with laptop screen
+✔ add project information into project sections with laptop screen @done(21-03-25 13:09)
 
 ✔ dynamically change the colour of my burger menu for the diff sections @done(21-03-24 18:51)
+
+
+✔ add the rest of the project images and fine tune @done(21-03-25 13:09)
+✔ add images of relvant languages to the h2 area @done(21-03-25 13:09)
+
+✔ change color of menu box in orange area @done(21-03-25 15:32)
+✔ add github buttons LIVE and CODE to project area @done(21-03-25 15:27)
+
+- add links to project buttons
 
 - responsiveness
 	- set a MQ for the h4 in skills section so its fixed pixels at a certain width otherwise its absurd!
 	- add a MQ for super large screens to set a new min-height
+	- add MQ for max-height to control the h1 overlap
 	✔ add a wrapper with loads of give @done(21-03-24 14:53)
-
-
-	- add the rest of the project images and fine tune
-	- animations on them?
-	- add images of relvant languages to the h2 area
-	

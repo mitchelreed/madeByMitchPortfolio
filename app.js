@@ -29,17 +29,21 @@ container.addEventListener('mousemove', dragSlider)
 // parallax
 
 // on paragraph
-window.addEventListener('scroll', function (e) {
+if(window.innerWidth > 850) {
 
-	const target = document.querySelector('.scroll')
+	window.addEventListener('scroll', function (e) {
+	
+		const target = document.querySelector('.scroll')
+	
+		let scrolled = window.pageYOffset
+	
+		let rate = scrolled * 0.3
+	
+		target.style.transform = `translate3d(0px, -${rate}px, 0px)`
+	
+	})
 
-	let scrolled = window.pageYOffset
-
-	let rate = scrolled * 0.3
-
-	target.style.transform = `translate3d(0px, -${rate}px, 0px)`
-
-})
+}
 
 // on first circle
 window.addEventListener('scroll', function (e) {
@@ -137,6 +141,7 @@ menuButton.addEventListener('click', () => {
 
 // to dynamically change the burger menu over purple or orange
 	const burger = document.querySelector(".menuBurger");
+	const navMenu = document.querySelector(".nav");
 	const burgerBefore = document.querySelector(".menuBurgerBefore");
 	const burgerAfter = document.querySelector(".menuBurgerAfter");
 	const sectionOne = document.querySelector(".toolKit");
@@ -150,15 +155,17 @@ menuButton.addEventListener('click', () => {
 		sectionOneObserver
 	) {
 		entries.forEach(entry => {
-			console.log(entry.target)
+
 			if (entry.isIntersecting) {
 				burger.classList.add("burgerSwap");
 				burgerBefore.classList.add("burgerSwap");
 				burgerAfter.classList.add("burgerSwap");
+				navMenu.classList.add("burgerBorder");
 			} else {
 				burger.classList.remove("burgerSwap");
 				burgerBefore.classList.remove("burgerSwap");
 				burgerAfter.classList.remove("burgerSwap");
+				navMenu.classList.remove("burgerBorder");
 			}
 		});
 	}, sectionOneOptions);

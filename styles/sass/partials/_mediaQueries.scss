@@ -1,3 +1,208 @@
+@media (max-width: 850px) {
+  .header {
+    min-height: 700px;
+  }
+
+
+  header {
+    
+    h1 {
+      font-size: 5vw;
+      position: relative;
+    }
+
+    .spacer {
+      display: none;
+    }
+  }
+
+  .imageAndP {
+    flex-direction: column;
+  }
+
+  .bio {
+    margin: 0;
+    margin-top: 20px;
+    width: 85%;
+    min-width: none;
+  }
+
+  .project {
+    height: auto;
+  }
+
+  .projectContentContainer {
+    flex-direction: column;
+
+    p {
+      padding-top: 20px;
+      text-align: center;
+      padding-right:0;
+    }
+
+    img {
+      margin-top: 20px;
+      width: 75%;
+    }
+  }
+
+  .projectButtons {
+    width: 80%;
+    padding: 0;
+  }
+
+  .toolKit {
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+    ul {
+      gap: 5px;
+    }
+  }
+
+  .skills {
+    min-height: 850px;
+  }
+
+  .skillsTitleContainer {
+    width: 100%;
+    margin-bottom: 50px;
+    h4 {
+      text-align: center;
+      margin: 0;
+      text-decoration: none;
+      font-size: 3rem;
+    }
+  }
+
+  .contact {
+    height: auto;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+    
+    img {
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+      object-position: bottom;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .formContainer {
+    width: 100%;
+  }
+}
+
+@media(max-width: 550px) {
+  
+  
+  .projectHeader {
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    h2 {
+      text-align: center;
+      width: 100%;
+      font-size: 5vw;
+      margin: 0;
+    }
+  }
+
+  .skillsTitleContainer {
+    width: 100%;
+    margin-bottom: 50px;
+    h4 {
+      text-align: center;
+      margin: 0;
+      text-decoration: none;
+      font-size: 2.5rem;
+    }
+  }
+
+  .contact {
+    img {
+      display: none;
+    }
+  }
+
+  .bio {
+    margin: 0;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    width: 85%;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  .circleContainer {
+    top: -55px;
+  }
+
+  
+}
+
+@media(max-width: 460px) {
+
+  header {
+    h1 {
+      position: relative;
+    }
+  }
+
+  .mobileImage {
+    display: block;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  .container {
+    display: none;
+  }
+ 
+  
+}
+
+@media(max-width: 400px) { 
+ .header {
+   height: 750px;
+
+   h1 {
+     margin-bottom: 20px;
+   }
+ }
+  .toolKit {
+    ul {
+      gap: 0;
+      
+      li {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+        i {
+          font-size: 5.5rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+
+
 @media (prefers-reduced-motion: reduce), (update: slow) {
 
   * {
