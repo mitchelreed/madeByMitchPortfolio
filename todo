@@ -25,8 +25,24 @@
 ✔ change color of menu box in orange area @done(21-03-25 15:32)
 ✔ add github buttons LIVE and CODE to project area @done(21-03-25 15:27)
 
-- add links to project buttons
+✔ add links to project buttons @done(21-03-25 20:16)
 
 ✔ responsiveness @done(21-03-25 19:46)
-	- set a MQ for the h4 in skills section so its fixed pixels at a certain width otherwise its absurd!
-	✔ add a wrapper with loads of give @done(21-03-24 14:53)
+✔ add a wrapper with loads of give @done(21-03-24 14:53)
+
+
+- set a MQ for the h4 in skills section so its fixed pixels at a certain width otherwise its absurd!
+
+- make adjustments to the hamburger intersection changer
+- re-examine the h1
+- fix the placeholder text colours for safari and chrome
+
+- little more padding inside the project areas
+
+- bit more space under the heading
+
+- positioning the project image/gif slightly outside the container with absolute and add a purple border to break the orange border
+
+- align the buttons within project section to the left
+
+- additional padding on submit button

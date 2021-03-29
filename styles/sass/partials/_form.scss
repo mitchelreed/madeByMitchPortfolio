@@ -1,4 +1,3 @@
-
 // contact form
 .contact {
 	height: 400px;
@@ -8,7 +7,6 @@
 	align-items: center;
 	flex-direction: row;
 	font-size: 1.5rem;
-
 }
 
 .contactContainer {
@@ -31,13 +29,11 @@
 	border-radius: 10px;
 	padding: 20px;
 	color: #595b53;
-
 }
 
 .textContent {
 	display: flex;
 	align-items: center;
-	
 
 	p {
 		padding-bottom: 20px;
@@ -51,7 +47,7 @@ input[type="email"] {
 	height: 50px;
 	background-color: $secondary;
 	border: 2px solid $primary;
-	font-family: 'IBM Plex Mono', sans-serif;
+	font-family: "IBM Plex Mono", sans-serif;
 	color: $primary;
 }
 
@@ -64,7 +60,7 @@ textarea {
 	border: 2px solid $primary;
 	padding: 10px;
 	margin-bottom: 10px;
-	font-family: 'IBM Plex Mono', sans-serif;
+	font-family: "IBM Plex Mono", sans-serif;
 	font-weight: 800;
 	color: $primary;
 }
@@ -84,10 +80,10 @@ button {
 	outline: none;
 	border-radius: 6px;
 	cursor: pointer;
-	font-family: 'IBM Plex Mono', sans-serif;
+	font-family: "IBM Plex Mono", sans-serif;
 	color: $primary;
 	font-weight: 800;
-	transition: all .5s ease;
+	transition: all 0.5s ease;
 
 	&:hover {
 		background-color: $primary;
@@ -121,7 +117,7 @@ input {
 
 #status.success {
 	color: $text;
-	font-family: 'IBM Plex Mono', sans-serif;
+	font-family: "IBM Plex Mono", sans-serif;
 	background: $primary;
 	border: 4px solid rgb(23, 196, 23);
 	border-radius: 7px;
@@ -134,7 +130,7 @@ input {
 
 #status.error {
 	color: $text;
-	font-family: 'IBM Plex Mono', sans-serif;
+	font-family: "IBM Plex Mono", sans-serif;
 	background: $primary;
 	border: 4px solid tomato;
 	border-radius: 7px;
