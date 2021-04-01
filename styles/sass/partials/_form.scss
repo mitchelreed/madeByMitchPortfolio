@@ -84,6 +84,7 @@ button {
 	color: $primary;
 	font-weight: 800;
 	transition: all 0.5s ease;
+	padding: 20px;
 
 	&:hover {
 		background-color: $primary;
@@ -139,4 +140,21 @@ input {
 	align-items: center;
 	justify-content: center;
 	animation: status 5s ease forwards;
+}
+
+::-webkit-input-placeholder {
+	color: $primary;
+	opacity: .7;
+}
+
+::-moz-placeholder {
+	color: $primary;
+}
+
+::-ms-placeholder {
+	color: $primary;
+}
+
+::placeholder {
+	color: $primary;
 }

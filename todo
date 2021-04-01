@@ -33,16 +33,14 @@
 
 - set a MQ for the h4 in skills section so its fixed pixels at a certain width otherwise its absurd!
 
-- make adjustments to the hamburger intersection changer
+✔ make adjustments to the hamburger intersection changer @done(21-04-01 15:53)
 - re-examine the h1
 - fix the placeholder text colours for safari and chrome
 
-- little more padding inside the project areas
+✔ little more padding inside the project areas @done(21-04-01 15:52)
 
-- bit more space under the heading
+✔ bit more space under the heading @done(21-04-01 15:52)
 
-- positioning the project image/gif slightly outside the container with absolute and add a purple border to break the orange border
-
-- align the buttons within project section to the left
+✔ align the buttons within project section to the left @done(21-04-01 15:53)
 
 - additional padding on submit button
