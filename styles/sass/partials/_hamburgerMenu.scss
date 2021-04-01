@@ -23,7 +23,7 @@
 }
 
 .menuBurger {
-	width: 40px;
+	width: 35px;
 	height: 6px;
 	background: $secondary;
 	border-radius: 5px;
@@ -32,8 +32,8 @@
 }
 
 .menuBurgerBefore {
-	transform: translateY(-9px);
-	width: 40px;
+	transform: translateY(-8px);
+	width: 35px;
 	height: 6px;
 	background: $secondary;
 	border-radius: 5px;
@@ -41,8 +41,8 @@
 	opacity: 0.8;
 }
 .menuBurgerAfter {
-	transform: translateY(9px);
-	width: 40px;
+	transform: translateY(8px);
+	width: 35px;
 	height: 6px;
 	background: $secondary;
 	border-radius: 5px;

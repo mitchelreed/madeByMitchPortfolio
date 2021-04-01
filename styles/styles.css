@@ -1017,7 +1017,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menuBurger {
-  width: 40px;
+  width: 35px;
   height: 6px;
   background: #ffa05f;
   border-radius: 5px;
@@ -1027,9 +1027,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menuBurgerBefore {
-  -webkit-transform: translateY(-9px);
-          transform: translateY(-9px);
-  width: 40px;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  width: 35px;
   height: 6px;
   background: #ffa05f;
   border-radius: 5px;
@@ -1039,9 +1039,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menuBurgerAfter {
-  -webkit-transform: translateY(9px);
-          transform: translateY(9px);
-  width: 40px;
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+  width: 35px;
   height: 6px;
   background: #ffa05f;
   border-radius: 5px;
@@ -1385,6 +1385,11 @@ input {
   }
   .project {
     height: auto;
+  }
+  .codeLinks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .projectContentContainer {
     -webkit-box-orient: vertical;
