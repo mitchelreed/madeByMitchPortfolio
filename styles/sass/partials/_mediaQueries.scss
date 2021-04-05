@@ -1,12 +1,25 @@
-
 @media (max-width: 850px) {
   
   .header {
-    min-height: 700px;
+    height: auto;
+    min-height: 800px;
+  }
+
+  .projectContentContainer img {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .projectHeader {
+    margin-bottom: 10px;
+  }
+
+  .project {
+    width: 100%;
+    padding: 20px;
   }
 
   header {
-    
     h1 {
       font-size: 5vw;
       position: relative;
@@ -24,13 +37,43 @@
   .bio {
     margin: 0;
     margin-top: 20px;
-    width: 85%;
+    width: 90%;
     min-width: none;
     text-align: center;
   }
 
   .project {
     height: auto;
+  }
+
+  .projectHeader {
+    h2 {
+      padding-bottom: 10px;
+    }
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    border-bottom: 1px solid $text;
+
+    .fa-arrow-right {
+      font-size: 2rem;
+      padding-right: 15px;
+    }
+
+    i {
+      font-size: 2.7rem;
+      color: $text;
+      margin-right: 10px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 2rem;
+      color: $text;
+      font-weight: 400;
+      font-family: "IBM Plex Mono", sans-serif;
+    }
   }
 
   .codeLinks {
@@ -43,7 +86,7 @@
     p {
       padding-top: 20px;
       text-align: center;
-      padding-right:0;
+      padding-right: 0;
     }
 
     img {
@@ -60,7 +103,7 @@
   .toolKit {
     flex-direction: column;
     margin-bottom: 20px;
-    
+
     ul {
       gap: 5px;
     }
@@ -87,7 +130,7 @@
 
   .contactContainer {
     flex-direction: column;
-    
+
     img {
       width: 100%;
       height: 175px;
@@ -103,13 +146,12 @@
   }
 }
 
-@media(max-width: 550px) {
-  
-  
+
+@media (max-width: 550px) {
   .projectHeader {
     flex-wrap: wrap;
     justify-content: center;
-    
+
     h2 {
       text-align: center;
       width: 100%;
@@ -139,23 +181,21 @@
     margin: 0;
     font-size: 1.7rem;
     margin-top: 20px;
-    width: 85%;
+    width: 90%;
     min-width: 100px;
     text-align: center;
   }
 
   .circleContainer {
-    top: -55px;
+    top: -20px;
   }
-
-  
 }
 
-@media(max-width: 460px) {
-
+@media (max-width: 460px) {
   header {
     h1 {
       position: relative;
+      font-size: 2rem;
     }
   }
 
@@ -174,22 +214,21 @@
   .container {
     display: none;
   }
- 
-  
 }
 
-@media(max-width: 400px) { 
- .header {
-   height: 750px;
+@media (max-width: 400px) {
+  .header {
+    height: 750px;
 
-   h1 {
-     margin-bottom: 20px;
-   }
- }
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+
   .toolKit {
     ul {
       gap: 0;
-      
+
       li {
         img {
           width: 50px;
@@ -207,7 +246,6 @@
   }
 }
 
-
 @media (min-width: 1400px) {
   .header {
     min-height: 700px;
@@ -220,13 +258,10 @@
   }
 }
 
-
 @media (prefers-reduced-motion: reduce), (update: slow) {
-
   * {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
-    }
-    
+  }
 }

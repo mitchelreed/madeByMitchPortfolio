@@ -381,13 +381,21 @@ h1 {
 
 .bio {
   width: 33vw;
-  min-width: 390px;
+  min-width: 420px;
   margin-left: 5%;
   color: ghostwhite;
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   font-size: 1.8rem;
+}
+
+.bio .js {
+  border-bottom: 1px solid yellow;
+}
+
+.bio .reactLearn {
+  border-bottom: 1px solid cornflowerblue;
 }
 
 .firstLetter {
@@ -503,7 +511,7 @@ h1 {
   padding: 40px;
   padding-top: 30px;
   height: 420px;
-  width: 80%;
+  width: 90%;
   margin-bottom: 75px;
   border-radius: 30px;
   border: 3px solid #ffa05f;
@@ -1147,7 +1155,7 @@ nav a:hover {
 }
 
 .contact {
-  height: 400px;
+  height: 450px;
   background-color: #ffa05f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1180,8 +1188,7 @@ nav a:hover {
 
 .contactContainer img {
   width: 40%;
-  max-width: 500px;
-  padding: 20px;
+  max-width: 450px;
   margin-bottom: 20px;
   border-radius: 30px;
 }
@@ -1359,9 +1366,158 @@ input {
   color: #4f359b;
 }
 
+.spiralBody {
+  background-color: #4f359b;
+  height: auto;
+  position: relative;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  right: 0;
+  padding: 50px;
+  font-size: 4rem;
+  opacity: .8;
+  color: #ffa05f;
+}
+
+.musicSection {
+  height: calc(100vh - 70px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  max-width: 900px;
+}
+
+.musicSection p {
+  margin: 50px 0 50px 0;
+  font-size: 3rem;
+  color: #ffa05f;
+  font-family: "IBM Plex Mono", sans-serif;
+  line-height: 2;
+  text-align: center;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.gridArtContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gridChild {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gridChild img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .7;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.gridChild figcaption {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: ghostwhite;
+  font-family: "IBM Plex Mono", sans-serif;
+  padding: 10px;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.gridChild:hover figcaption {
+  opacity: .8;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.gridChild:hover img {
+  opacity: 1;
+}
+
+.spiralFooter img {
+  width: 2%;
+}
+
+@media (max-width: 800px) {
+  .musicSection {
+    min-height: 1300px;
+  }
+  .musicSection p {
+    font-size: 1.8rem;
+    width: 60%;
+    text-align: center;
+  }
+  .gridArtContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 300px;
+        grid-template-columns: 300px;
+    gap: 10px;
+  }
+  .gridArtContainer img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (max-width: 500px) {
+  .musicSection {
+    min-height: 1300px;
+  }
+  .musicSection p {
+    font-size: 1.8rem;
+    width: 70%;
+    text-align: left;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
 @media (max-width: 850px) {
   .header {
-    min-height: 700px;
+    height: auto;
+    min-height: 800px;
+  }
+  .projectContentContainer img {
+    width: 100%;
+    margin-top: 0;
+  }
+  .projectHeader {
+    margin-bottom: 10px;
+  }
+  .project {
+    width: 100%;
+    padding: 20px;
   }
   header h1 {
     font-size: 5vw;
@@ -1379,12 +1535,41 @@ input {
   .bio {
     margin: 0;
     margin-top: 20px;
-    width: 85%;
+    width: 90%;
     min-width: none;
     text-align: center;
   }
   .project {
     height: auto;
+  }
+  .projectHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 35px;
+    border-bottom: 1px solid ghostwhite;
+  }
+  .projectHeader h2 {
+    padding-bottom: 10px;
+  }
+  .projectHeader .fa-arrow-right {
+    font-size: 2rem;
+    padding-right: 15px;
+  }
+  .projectHeader i {
+    font-size: 2.7rem;
+    color: ghostwhite;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .projectHeader p {
+    font-size: 2rem;
+    color: ghostwhite;
+    font-weight: 400;
+    font-family: "IBM Plex Mono", sans-serif;
   }
   .codeLinks {
     -webkit-box-pack: center;
@@ -1488,18 +1673,19 @@ input {
     margin: 0;
     font-size: 1.7rem;
     margin-top: 20px;
-    width: 85%;
+    width: 90%;
     min-width: 100px;
     text-align: center;
   }
   .circleContainer {
-    top: -55px;
+    top: -20px;
   }
 }
 
 @media (max-width: 460px) {
   header h1 {
     position: relative;
+    font-size: 2rem;
   }
   .mobileImage {
     display: block;

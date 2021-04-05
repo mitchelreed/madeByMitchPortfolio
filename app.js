@@ -29,10 +29,10 @@ container.addEventListener('mousemove', dragSlider)
 // parallax
 
 // on paragraph
-if(window.innerWidth > 850) {
 
 	window.addEventListener('scroll', function (e) {
 	
+		if(window.innerWidth > 850) {
 		const target = document.querySelector('.scroll')
 	
 		let scrolled = window.pageYOffset
@@ -40,10 +40,12 @@ if(window.innerWidth > 850) {
 		let rate = scrolled * 0.3
 	
 		target.style.transform = `translate3d(0px, -${rate}px, 0px)`
-	
+		} else {
+			const target = document.querySelector('.scroll')
+			target.style.transform = `translate3d(0px, 0px, 0px)`
+		}
 	})
 
-}
 
 // on first circle
 window.addEventListener('scroll', function (e) {
