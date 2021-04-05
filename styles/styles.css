@@ -1463,10 +1463,6 @@ input {
   opacity: 1;
 }
 
-.spiralFooter img {
-  width: 2%;
-}
-
 @media (max-width: 800px) {
   .musicSection {
     min-height: 1300px;
