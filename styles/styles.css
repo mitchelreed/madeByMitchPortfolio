@@ -1372,17 +1372,38 @@ input {
   position: relative;
 }
 
+.spiralBody > a {
+  text-align: center;
+}
+
+.spiralBody > a .toMain {
+  font-size: 1.3rem;
+  font-family: 'IBM Plex Mono', sans-serif;
+  display: block;
+  padding: 5px;
+}
+
 .fa-arrow-left {
   position: absolute;
   right: 0;
-  padding: 50px;
+  padding: 40px;
   font-size: 4rem;
-  opacity: .8;
+  opacity: 0.8;
   color: #ffa05f;
+  z-index: 10;
+}
+
+.fa-arrow-left:hover {
+  color: ghostwhite;
+}
+
+.fa-arrow-left:active {
+  color: ghostwhite;
 }
 
 .musicSection {
   height: calc(100vh - 70px);
+  min-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1397,7 +1418,9 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 30px;
-  max-width: 900px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .musicSection p {
@@ -1435,7 +1458,7 @@ input {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: .7;
+  opacity: 0.7;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -1454,7 +1477,7 @@ input {
 }
 
 .gridChild:hover figcaption {
-  opacity: .8;
+  opacity: 0.8;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
@@ -1463,9 +1486,26 @@ input {
   opacity: 1;
 }
 
-@media (max-width: 800px) {
+.gridChild:active figcaption {
+  opacity: 0.8;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.gridChild:active img {
+  opacity: 1;
+}
+
+.mobileIcon {
+  display: none;
+}
+
+@media (max-width: 700px) {
   .musicSection {
-    min-height: 1300px;
+    min-height: 1220px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .musicSection p {
     font-size: 1.8rem;
@@ -1487,9 +1527,6 @@ input {
 }
 
 @media (max-width: 500px) {
-  .musicSection {
-    min-height: 1300px;
-  }
   .musicSection p {
     font-size: 1.8rem;
     width: 70%;
