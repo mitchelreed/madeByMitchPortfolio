@@ -17,28 +17,18 @@
 <body>
     <!-- CONTACT FORM -->
 		<section class="contact" id="contact">
-			<div class="contactContainer wrapper">
-				<div class="formContainer">
-					<form action="https://formspree.io/f/xyylgppa" method="POST" id="myForm">
-						<div class="inputGroup">
-							<label for="name" class="formFocus srOnly">Name</label>
-							<input placeholder="Who are you?" type="text" name="name" id="name" class="formFocus" required>
-							<label for="email" class="emailLabel srOnly" class="formFocus">Email</label>
-							<input placeholder="What's your email?" type="email" id="email" name="email" class="formFocus" required>
-						</div>
-
-						<label for="message" class="formFocus srOnly">Message</label>
-						<textarea name="message" id="message" class="formFocus" required
-							placeholder="Write your generic 'hello' message here! Or begin a discussion about the meaning of life, all else will be filtered into oblivion."></textarea>
-
-						<button type="submit">send me an email</button>
-					</form>
-					<div id="status"></div>
-				</div>
-				<img src="./assets/jim_carrey_typing.gif" alt="Jim Carrey typing like a maniacal god">
-			</div>
-
+			<input type="text" value="jmitchelreed@gmail.com" id="myInput" disabled>
+			<button onclick="myFunction()">Copy email</button>
 		</section>
-		<script src="./app.js"></script>
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
 </body>
 </html>

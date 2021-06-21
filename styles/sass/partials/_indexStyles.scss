@@ -369,25 +369,3 @@ footer {
 	}
 }
 
-.contactPoints {
-	font-size: 3rem;
-	padding-right: 10px;
-	display: flex;
-
-	i {
-		display: block;
-		padding-right: 5px;
-	}
-
-	a {
-		text-decoration: none;
-		color: darken($primary, 10%);
-		&:visited {
-			color: darken($primary, 10%);
-		}
-
-		&:hover {
-			color: lighten($primary, 10%);
-		}
-	}
-}
