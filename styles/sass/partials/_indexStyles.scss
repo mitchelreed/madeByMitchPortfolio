@@ -77,6 +77,11 @@ h1 {
 	}
 }
 
+.check {
+	color: $secondary;
+	font-weight: 600;
+}
+
 .firstLetter {
 	border-radius: 50%;
 	margin-right: 3px;
@@ -147,99 +152,64 @@ h1 {
 // HEADER END
 
 // PROJECT SECTION
+
+
 .projects {
-	min-height: calc(100vh + 50px);
-	height: auto;
+	height: 900px;
 	background: $primary;
 	padding-top: 35px;
+	position: relative;
+	color: $text;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.8rem;
+	line-height: 3;
+	font-family: "IBM Plex Mono", sans-serif;
+
+	ul li {
+		list-style-type: none;
+
+		a {
+			color: lightgreen;
+
+			&:hover {
+				color: lighten(green, 33%);
+			}
+		}
+	}
+
+	.music,
+	.film {
+		width: 80%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+		text-align: center;
+
+		.list,
+		.info {
+			width: 50%;
+		}
+	}
+
+	.film {
+		a {
+			color: rgb(0,173,239);
+
+			&:hover {
+				color: lighten(rgb(0,173,239), 33%);
+			}
+		}
+	}
 
 	.wave {
-		position: relative;
-		bottom: -4px;
+		position: absolute;
+		bottom: 0;
 	}
 }
 
-.projectsContainer {
-	padding: 5%;
-	padding-bottom: 0px;
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	align-items: center;
-}
-
-.project {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 40px;
-	padding-top: 30px;
-	height: 420px;
-	width: 90%;
-	margin-bottom: 75px;
-	border-radius: 30px;
-	border: 3px solid $secondary;
-	position: relative;
-	
-
-	h2 {
-		color: $text;
-		font-family: "IBM Plex Mono", sans-serif;
-		font-weight: 600;
-		font-size: 3rem;
-		margin-right: 30px;
-	}
-}
-
-.projectHeader {
-	display: flex;
-	align-items: center;
-	margin-bottom: 35px;
-	border-bottom: 1px solid $text;
-
-	.fa-arrow-right {
-		font-size: 2rem;
-		padding-right: 15px;
-	}
-
-	i {
-		font-size: 3.5rem;
-		color: $text;
-		margin-right: 10px;
-		margin-bottom: 5px;
-	}
-
-	p {
-		font-size: 2rem;
-		color: $text;
-		font-weight: 400;
-		font-family: "IBM Plex Mono", sans-serif;
-	}
-}
-
-.projectContentContainer {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	justify-content: space-evenly;
-
-	
-
-	img {
-		width: 50%;
-		border-radius: 5px;
-		max-width: 420px;
-	}
-
-	p {
-		font-family: "IBM Plex Sans", sans-serif;
-		font-size: 1.9rem;
-		color: $secondary;
-		line-height: 1.5;
-		font-weight: 600;
-	}
-}
 
 .projectButtons {
 	padding-left: 30px;
@@ -283,19 +253,6 @@ h1 {
 	}
 }
 
-.notePad,
-.wisdom {
-	flex-direction: row-reverse;
-
-	p {
-		padding-left: 0;
-		padding-right: 30px;
-	}
-
-	.projectButtons {
-		padding-left: 0;
-	}
-}
 
 // PROJECT END
 

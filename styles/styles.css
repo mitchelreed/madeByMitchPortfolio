@@ -398,6 +398,11 @@ h1 {
   border-bottom: 1px solid cornflowerblue;
 }
 
+.check {
+  color: #ffa05f;
+  font-weight: 600;
+}
+
 .firstLetter {
   border-radius: 50%;
   margin-right: 3px;
@@ -470,118 +475,70 @@ h1 {
 }
 
 .projects {
-  min-height: calc(100vh + 50px);
-  height: auto;
+  height: 900px;
   background: #4f359b;
   padding-top: 35px;
+  position: relative;
+  color: ghostwhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+  line-height: 3;
+  font-family: "IBM Plex Mono", sans-serif;
+}
+
+.projects ul li {
+  list-style-type: none;
+}
+
+.projects ul li a {
+  color: lightgreen;
+}
+
+.projects ul li a:hover {
+  color: #29ff29;
+}
+
+.projects .music,
+.projects .film {
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projects .music .list,
+.projects .music .info,
+.projects .film .list,
+.projects .film .info {
+  width: 50%;
+}
+
+.projects .film a {
+  color: #00adef;
+}
+
+.projects .film a:hover {
+  color: #98e3ff;
 }
 
 .projects .wave {
-  position: relative;
-  bottom: -4px;
-}
-
-.projectsContainer {
-  padding: 5%;
-  padding-bottom: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px;
-  padding-top: 30px;
-  height: 420px;
-  width: 90%;
-  margin-bottom: 75px;
-  border-radius: 30px;
-  border: 3px solid #ffa05f;
-  position: relative;
-}
-
-.project h2 {
-  color: ghostwhite;
-  font-family: "IBM Plex Mono", sans-serif;
-  font-weight: 600;
-  font-size: 3rem;
-  margin-right: 30px;
-}
-
-.projectHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 35px;
-  border-bottom: 1px solid ghostwhite;
-}
-
-.projectHeader .fa-arrow-right {
-  font-size: 2rem;
-  padding-right: 15px;
-}
-
-.projectHeader i {
-  font-size: 3.5rem;
-  color: ghostwhite;
-  margin-right: 10px;
-  margin-bottom: 5px;
-}
-
-.projectHeader p {
-  font-size: 2rem;
-  color: ghostwhite;
-  font-weight: 400;
-  font-family: "IBM Plex Mono", sans-serif;
-}
-
-.projectContentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.projectContentContainer img {
-  width: 50%;
-  border-radius: 5px;
-  max-width: 420px;
-}
-
-.projectContentContainer p {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 1.9rem;
-  color: #ffa05f;
-  line-height: 1.5;
-  font-weight: 600;
+  position: absolute;
+  bottom: 0;
 }
 
 .projectButtons {
@@ -639,25 +596,6 @@ h1 {
 
 .codeLinks .liveButton {
   margin-right: 15px;
-}
-
-.notePad,
-.wisdom {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.notePad p,
-.wisdom p {
-  padding-left: 0;
-  padding-right: 30px;
-}
-
-.notePad .projectButtons,
-.wisdom .projectButtons {
-  padding-left: 0;
 }
 
 .skills {
