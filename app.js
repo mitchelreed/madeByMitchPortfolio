@@ -141,35 +141,35 @@ menuButton.addEventListener('click', () => {
     xhr.send(data);
   }
 
-// to dynamically change the burger menu over purple or orange
-	const burger = document.querySelector(".menuBurger");
-	const navMenu = document.querySelector(".nav");
-	const burgerBefore = document.querySelector(".menuBurgerBefore");
-	const burgerAfter = document.querySelector(".menuBurgerAfter");
-	const sectionOne = document.querySelector(".toolKit");
-	const sectionOneOptions = {
-		threshold: .5,
-		rootMargin: "300px 0px 0px 0px"
-	};
+// // to dynamically change the burger menu over purple or orange
+// 	const burger = document.querySelector(".menuBurger");
+// 	const navMenu = document.querySelector(".nav");
+// 	const burgerBefore = document.querySelector(".menuBurgerBefore");
+// 	const burgerAfter = document.querySelector(".menuBurgerAfter");
+// 	const sectionOne = document.querySelector(".toolKit");
+// 	const sectionOneOptions = {
+// 		threshold: .5,
+// 		rootMargin: "300px 0px 0px 0px"
+// 	};
 	
-	const sectionOneObserver = new IntersectionObserver(function(
-		entries,
-		sectionOneObserver
-	) {
-		entries.forEach(entry => {
+// 	const sectionOneObserver = new IntersectionObserver(function(
+// 		entries,
+// 		sectionOneObserver
+// 	) {
+// 		entries.forEach(entry => {
 
-			if (entry.isIntersecting) {
-				burger.classList.add("burgerSwap");
-				burgerBefore.classList.add("burgerSwap");
-				burgerAfter.classList.add("burgerSwap");
-				navMenu.classList.add("burgerBorder");
-			} else {
-				burger.classList.remove("burgerSwap");
-				burgerBefore.classList.remove("burgerSwap");
-				burgerAfter.classList.remove("burgerSwap");
-				navMenu.classList.remove("burgerBorder");
-			}
-		});
-	}, sectionOneOptions);
+// 			if (entry.isIntersecting) {
+// 				burger.classList.add("burgerSwap");
+// 				burgerBefore.classList.add("burgerSwap");
+// 				burgerAfter.classList.add("burgerSwap");
+// 				navMenu.classList.add("burgerBorder");
+// 			} else {
+// 				burger.classList.remove("burgerSwap");
+// 				burgerBefore.classList.remove("burgerSwap");
+// 				burgerAfter.classList.remove("burgerSwap");
+// 				navMenu.classList.remove("burgerBorder");
+// 			}
+// 		});
+// 	}, sectionOneOptions);
 	
-	sectionOneObserver.observe(sectionOne);
+// 	sectionOneObserver.observe(sectionOne);

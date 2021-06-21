@@ -146,6 +146,13 @@
   }
 }
 
+@media (max-width: 590px) {
+  .projects {
+    font-size: 1.4rem;
+    height: 600px;
+  }
+}
+
 
 @media (max-width: 550px) {
   .projectHeader {
@@ -223,6 +230,10 @@
     h1 {
       margin-bottom: 20px;
     }
+  }
+
+  .projects {
+    font-size: 1.1rem;
   }
 
   .toolKit {

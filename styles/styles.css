@@ -475,7 +475,7 @@ h1 {
 }
 
 .projects {
-  height: 900px;
+  height: 850px;
   background: #4f359b;
   padding-top: 35px;
   position: relative;
@@ -509,7 +509,7 @@ h1 {
 
 .projects .music,
 .projects .film {
-  width: 80%;
+  width: 98%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1093,7 +1093,7 @@ nav a:hover {
 }
 
 .contact {
-  height: 450px;
+  height: 100vh;
   background-color: #ffa05f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1613,6 +1613,13 @@ input {
   }
 }
 
+@media (max-width: 590px) {
+  .projects {
+    font-size: 1.4rem;
+    height: 600px;
+  }
+}
+
 @media (max-width: 550px) {
   .projectHeader {
     -ms-flex-wrap: wrap;
@@ -1679,6 +1686,9 @@ input {
   }
   .header h1 {
     margin-bottom: 20px;
+  }
+  .projects {
+    font-size: 1.1rem;
   }
   .toolKit ul {
     gap: 0;
