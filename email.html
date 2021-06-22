@@ -18,16 +18,16 @@
     <!-- CONTACT FORM -->
 		<section class="contact" id="contact">
 			<input type="text" value="jmitchelreed@gmail.com" id="myInput" disabled>
-			<button onclick="myFunction()">Copy email</button>
+			<button onclick="simpleEmail()">Copy email</button>
 		</section>
 
 <script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
+function simpleEmail() {
+  let copyText = document.getElementById("myInput");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
+  alert("You have copied my email: " + copyText.value);
 }
 </script>
 </body>

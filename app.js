@@ -92,3 +92,46 @@ menuButton.addEventListener('click', () => {
 	}
 	
 })
+
+const education = {
+	university: {
+	instituion: "Ryerson University",
+	program: "Radio and Relevision Arts",
+	awards: {
+		1: "Presidents Award",
+		2: "Best Practicum"
+	},
+	honorStudent: true
+},
+	continuingEd: {
+		instituion: "University of Toronto",
+		program: "Creative Writing",
+		instructor: "Ibi Kaslik"
+	},
+
+	college: {
+		instituion: "Juno College of Technology",
+		program: "Web Dev Bootcamp",
+	},
+
+	self: {
+		instituion: "Life",
+		program: "Humanity",
+		awards: "Still alive"
+	}
+}
+
+
+console.log("%c Hi! You have opened the console :) Maybe you're a dev, or u accidentally pressed f12.", 'background: #222; color: #32CD32')
+console.log("__________________________________")
+
+console.log("Mitch's 'Education' Object:", education)
+
+console.log("__________________________________")
+console.log("%c Here are some book reccomendations:",'background: #222; color: #32CD32')
+
+console.log(`Sometimes a Great Notion
+The Invisible College
+The Name of the Wind
+Killing Commandatore`)
+

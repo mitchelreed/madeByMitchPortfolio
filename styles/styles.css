@@ -507,9 +507,14 @@ h1 {
   color: #29ff29;
 }
 
+.projects .links {
+  position: absolute;
+  top: 0;
+}
+
 .projects .music,
 .projects .film {
-  width: 98%;
+  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,13 +524,6 @@ h1 {
           justify-content: center;
   margin-bottom: 40px;
   text-align: center;
-}
-
-.projects .music .list,
-.projects .music .info,
-.projects .film .list,
-.projects .film .info {
-  width: 50%;
 }
 
 .projects .film a {

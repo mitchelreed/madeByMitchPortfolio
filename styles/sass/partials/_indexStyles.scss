@@ -166,6 +166,7 @@ h1 {
 	font-size: 1.8rem;
 	line-height: 3;
 	font-family: "IBM Plex Mono", sans-serif;
+	
 
 
 	ul li {
@@ -180,19 +181,21 @@ h1 {
 		}
 	}
 
+	.links {
+		position: absolute;
+		top: 0;
+	}
+
 	.music,
 	.film {
-		width: 98%;
+		width: 100%;
 		height: auto;
 		display: flex;
 		justify-content: center;
 		margin-bottom: 40px;
 		text-align: center;
 
-		.list,
-		.info {
-			width: 50%;
-		}
+		
 	}
 
 	.film {
@@ -208,6 +211,7 @@ h1 {
 	.wave {
 		position: absolute;
 		bottom: 0;
+		
 	}
 }
 
