@@ -390,15 +390,34 @@ h1 {
   font-size: 1.8rem;
 }
 
-.bio .js {
-  border-bottom: 1px solid yellow;
+.bio .filmLink {
+  text-decoration: none;
+  color: #00adef;
 }
 
-.bio .reactLearn {
-  border-bottom: 1px solid cornflowerblue;
+.bio .filmLink:hover {
+  color: #98e3ff;
 }
 
-.check {
+.bio .musicLink {
+  text-decoration: none;
+  color: lightgreen;
+}
+
+.bio .musicLink:hover {
+  color: #29ff29;
+}
+
+.bio .goodSci {
+  text-decoration: none;
+  color: yellow;
+}
+
+.bio .goodSci:hover {
+  color: #29ff29;
+}
+
+.check a {
   color: #ffa05f;
   font-weight: 600;
 }
@@ -706,6 +725,54 @@ h4 {
   font-family: "IBM Plex Mono", sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
+}
+
+.contact {
+  background-color: #ffa05f;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .buttons button {
+  height: 50px;
+  background-color: #4f359b;
+  border: none;
+  color: #ffa05f;
+  font-size: 1.5rem;
+  font-family: IBM Plex Mono;
+  font-weight: 900;
+}
+
+.contact .buttons button:hover {
+  color: lime;
+}
+
+.contact .buttons button:active {
+  -webkit-box-shadow: inset 1px 5px 15px -6px #000000;
+  box-shadow: inset 1px 5px 15px -6px #000000;
+}
+
+.contact input {
+  font-size: 2rem;
+  width: 225px;
 }
 
 footer {
@@ -1062,195 +1129,6 @@ nav a:hover {
           text-decoration-line: underline;
   -webkit-text-decoration-style: wavy;
           text-decoration-style: wavy;
-}
-
-.contact {
-  height: 100vh;
-  background-color: #ffa05f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 1.5rem;
-}
-
-.spiralBody {
-  background-color: #4f359b;
-  height: auto;
-  position: relative;
-}
-
-.spiralBody > a {
-  text-align: center;
-}
-
-.spiralBody > a .toMain {
-  font-size: 1.3rem;
-  font-family: 'IBM Plex Mono', sans-serif;
-  display: block;
-  padding: 5px;
-}
-
-.fa-arrow-left {
-  position: absolute;
-  right: 0;
-  padding: 40px;
-  font-size: 4rem;
-  opacity: 0.8;
-  color: #ffa05f;
-  z-index: 10;
-}
-
-.fa-arrow-left:hover {
-  color: ghostwhite;
-}
-
-.fa-arrow-left:active {
-  color: ghostwhite;
-}
-
-.musicSection {
-  height: calc(100vh - 70px);
-  min-height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 30px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.musicSection p {
-  margin: 50px 0 50px 0;
-  font-size: 3rem;
-  color: #ffa05f;
-  font-family: "IBM Plex Mono", sans-serif;
-  line-height: 2;
-  text-align: center;
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
-}
-
-.gridArtContainer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.gridChild {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.gridChild img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0.7;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.gridChild figcaption {
-  font-size: 1.6rem;
-  font-weight: 900;
-  color: ghostwhite;
-  font-family: "IBM Plex Mono", sans-serif;
-  padding: 10px;
-  -webkit-transform: translateY(-6px);
-          transform: translateY(-6px);
-  opacity: 0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.gridChild:hover figcaption {
-  opacity: 0.8;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-.gridChild:hover img {
-  opacity: 1;
-}
-
-.gridChild:active figcaption {
-  opacity: 0.8;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-.gridChild:active img {
-  opacity: 1;
-}
-
-.mobileIcon {
-  display: none;
-}
-
-@media (max-width: 700px) {
-  .musicSection {
-    min-height: 1220px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .musicSection p {
-    font-size: 1.8rem;
-    width: 60%;
-    text-align: center;
-  }
-  .gridArtContainer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 300px;
-        grid-template-columns: 300px;
-    gap: 10px;
-  }
-  .gridArtContainer img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-@media (max-width: 500px) {
-  .musicSection p {
-    font-size: 1.8rem;
-    width: 70%;
-    text-align: left;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
 }
 
 @media (max-width: 850px) {
