@@ -529,6 +529,7 @@ h1 {
 .projects .links {
   position: absolute;
   top: 0;
+  z-index: 10;
 }
 
 .projects .music,

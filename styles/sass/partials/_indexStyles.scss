@@ -212,6 +212,7 @@ h1 {
 	.links {
 		position: absolute;
 		top: 0;
+		z-index: 10;
 	}
 
 	.music,
@@ -222,8 +223,6 @@ h1 {
 		justify-content: center;
 		margin-bottom: 40px;
 		text-align: center;
-
-		
 	}
 
 	.film {
@@ -239,7 +238,6 @@ h1 {
 	.wave {
 		position: absolute;
 		bottom: 0;
-		
 	}
 }
 
