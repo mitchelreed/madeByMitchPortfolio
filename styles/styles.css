@@ -333,7 +333,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #4f359b;
+  background-color: #3190D0;
   position: relative;
 }
 
@@ -440,7 +440,7 @@ h1 {
 
 .alterEgo {
   display: none;
-  color: #ac99e6;
+  color: #1B6393;
 }
 
 .circleContainer {
@@ -495,7 +495,7 @@ h1 {
 
 .projects {
   height: 900px;
-  background: #4f359b;
+  background: #3190D0;
   padding-top: 35px;
   position: relative;
   color: ghostwhite;
@@ -792,13 +792,13 @@ footer {
 
 footer .madeByMitch {
   font-family: "IBM Plex Mono", sans-serif;
-  color: #4f359b;
+  color: white;
   font-size: 1.7rem;
   font-weight: 500;
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: #3c2875;
+  color: white;
 }
 
 footer .madeByMitch:visited {
@@ -811,7 +811,7 @@ footer .madeByMitch:hover {
 
 html {
   scrollbar-width: auto;
-  scrollbar-color: #ffa05f #4f359b;
+  scrollbar-color: #ffa05f #3190D0;
 }
 
 body::-webkit-scrollbar {
@@ -819,7 +819,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #4f359b;
+  background: #3190D0;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -1121,7 +1121,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #4f359b;
+  color: white;
 }
 
 nav a:hover {

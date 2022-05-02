@@ -1,7 +1,7 @@
 
 html {
 	scrollbar-width: auto;
-	scrollbar-color: $secondary $primary ;
+	scrollbar-color: $secondary #3190D0;
 }
 
 body::-webkit-scrollbar {
@@ -9,7 +9,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: $primary;     
+  background: #3190D0;     
 }
 
 body::-webkit-scrollbar-thumb {

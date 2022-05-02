@@ -25,7 +25,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: $primary;
+	background-color: #3190D0;
 	position: relative;
 }
 
@@ -126,7 +126,7 @@ h1 {
 // sentence that pops up with the photo slider
 .alterEgo {
 	display: none;
-	color: $primaryLight;
+	color: #1B6393;
 }
 
 // the circle
@@ -186,7 +186,7 @@ h1 {
 
 .projects {
 	height: 900px;
-	background: $primary;
+	background: #3190D0;
 	padding-top: 35px;
 	position: relative;
 	color: $text;
@@ -419,13 +419,13 @@ footer {
 
 	.madeByMitch {
 		font-family: "IBM Plex Mono", sans-serif;
-		color: $primary;
+		color: white;
 		font-size: 1.7rem;
 		font-weight: 500;
 		padding: 0;
 		margin: 0;
 		text-decoration: none;
-		color: darken($primary, 10%);
+		color: white;
 		&:visited {
 			color: darken($primary, 10%);
 		}
