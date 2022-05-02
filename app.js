@@ -93,83 +93,45 @@ menuButton.addEventListener('click', () => {
 	
 })
 
-// contact form
+const education = {
+	university: {
+	instituion: "Ryerson University",
+	program: "Radio and Relevision Arts",
+	awards: {
+		1: "Presidents Award",
+		2: "Best Practicum"
+	},
+	honorStudent: true
+},
+	continuingEd: {
+		instituion: "University of Toronto",
+		program: "Creative Writing",
+		instructor: "Ibi Kaslik"
+	},
 
-  window.addEventListener("DOMContentLoaded", function() {
+	college: {
+		instituion: "Juno College of Technology",
+		program: "Web Dev Bootcamp",
+	},
 
-    // get the form elements defined in your form HTML above
-    
-    let form = document.getElementById("myForm");
-    let status = document.getElementById("status");
+	self: {
+		instituion: "Life",
+		program: "Humanity",
+		awards: "Still alive"
+	}
+}
 
-    // Success and Error functions for after the form is submitted
-    
-    function success() {
-      form.reset();
-      status.innerHTML = "I look forward to chatting with you (✿◠‿◠)";
-      status.classList.add("success");
-    }
 
-    function error() {
-      status.innerHTML = "Oops! There was a problem.";
-      status.classList.add("error");
-    }
+console.log("%c Hi! You have opened the console :) Maybe you're a dev, or u accidentally pressed f12.", 'background: #222; color: #32CD32')
+console.log("__________________________________")
 
-    // handle the form submission event
+console.log("Mitch's 'Education' Object:", education)
 
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
-      let data = new FormData(form);
-      ajax(form.method, form.action, data, success, error);
-    });
-  });
-  
-  // helper function for sending an AJAX request
+console.log("__________________________________")
+console.log("%c Here are some book reccomendations:",'background: #222; color: #32CD32')
 
-  function ajax(method, url, data, success, error) {
-    let xhr = new XMLHttpRequest();
-    xhr.open(method, url);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        success(xhr.response, xhr.responseType);
-      } else {
-        error(xhr.status, xhr.response, xhr.responseType);
-      }
-    };
-    xhr.send(data);
-  }
+console.log(`Sometimes a Great Notion
+The Invisible College
+The Name of the Wind
+Killing Commandatore`)
 
-// to dynamically change the burger menu over purple or orange
-	const burger = document.querySelector(".menuBurger");
-	const navMenu = document.querySelector(".nav");
-	const burgerBefore = document.querySelector(".menuBurgerBefore");
-	const burgerAfter = document.querySelector(".menuBurgerAfter");
-	const sectionOne = document.querySelector(".toolKit");
-	const sectionOneOptions = {
-		threshold: .5,
-		rootMargin: "300px 0px 0px 0px"
-	};
-	
-	const sectionOneObserver = new IntersectionObserver(function(
-		entries,
-		sectionOneObserver
-	) {
-		entries.forEach(entry => {
-
-			if (entry.isIntersecting) {
-				burger.classList.add("burgerSwap");
-				burgerBefore.classList.add("burgerSwap");
-				burgerAfter.classList.add("burgerSwap");
-				navMenu.classList.add("burgerBorder");
-			} else {
-				burger.classList.remove("burgerSwap");
-				burgerBefore.classList.remove("burgerSwap");
-				burgerAfter.classList.remove("burgerSwap");
-				navMenu.classList.remove("burgerBorder");
-			}
-		});
-	}, sectionOneOptions);
-	
-	sectionOneObserver.observe(sectionOne);

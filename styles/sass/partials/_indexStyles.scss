@@ -68,14 +68,48 @@ h1 {
 	line-height: 1.6;
 	font-size: 1.8rem;
 
-	.js {
-		border-bottom: 1px solid yellow;
+	.filmLink {
+		text-decoration: none;
+
+			color: rgb(0,173,239);
+
+			&:hover {
+				color: lighten(rgb(0,173,239), 33%);
+			}
 	}
 
-	.reactLearn {
-		border-bottom: 1px solid cornflowerblue;
+	.musicLink {
+
+		text-decoration: none;
+		color: lightgreen;
+
+			&:hover {
+				color: lighten(green, 33%);
+			}
+	}
+
+	.goodSci {
+		text-decoration: none;
+
+		color: yellow;
+
+		&:hover {
+			color: lighten(green, 33%);
+		}
+
+	}
+
+}
+
+.check {
+
+	a {
+
+		color: $secondary;
+		font-weight: 600;
 	}
 }
+
 
 .firstLetter {
 	border-radius: 50%;
@@ -147,99 +181,66 @@ h1 {
 // HEADER END
 
 // PROJECT SECTION
+
+
+
 .projects {
-	min-height: calc(100vh + 50px);
-	height: auto;
+	height: 900px;
 	background: $primary;
 	padding-top: 35px;
+	position: relative;
+	color: $text;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.8rem;
+	line-height: 3;
+	font-family: "IBM Plex Mono", sans-serif;
+
+	ul li {
+		list-style-type: none;
+
+		a {
+			color: lightgreen;
+
+			&:hover {
+				color: lighten(green, 33%);
+			}
+		}
+	}
+
+	.links {
+		position: absolute;
+		top: 0;
+		z-index: 10;
+	}
+
+	.music,
+	.film {
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.film {
+		a {
+			color: rgb(0,173,239);
+
+			&:hover {
+				color: lighten(rgb(0,173,239), 33%);
+			}
+		}
+	}
 
 	.wave {
-		position: relative;
-		bottom: -4px;
+		position: absolute;
+		bottom: 0;
 	}
 }
 
-.projectsContainer {
-	padding: 5%;
-	padding-bottom: 0px;
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	align-items: center;
-}
-
-.project {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 40px;
-	padding-top: 30px;
-	height: 420px;
-	width: 90%;
-	margin-bottom: 75px;
-	border-radius: 30px;
-	border: 3px solid $secondary;
-	position: relative;
-	
-
-	h2 {
-		color: $text;
-		font-family: "IBM Plex Mono", sans-serif;
-		font-weight: 600;
-		font-size: 3rem;
-		margin-right: 30px;
-	}
-}
-
-.projectHeader {
-	display: flex;
-	align-items: center;
-	margin-bottom: 35px;
-	border-bottom: 1px solid $text;
-
-	.fa-arrow-right {
-		font-size: 2rem;
-		padding-right: 15px;
-	}
-
-	i {
-		font-size: 3.5rem;
-		color: $text;
-		margin-right: 10px;
-		margin-bottom: 5px;
-	}
-
-	p {
-		font-size: 2rem;
-		color: $text;
-		font-weight: 400;
-		font-family: "IBM Plex Mono", sans-serif;
-	}
-}
-
-.projectContentContainer {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	justify-content: space-evenly;
-
-	
-
-	img {
-		width: 50%;
-		border-radius: 5px;
-		max-width: 420px;
-	}
-
-	p {
-		font-family: "IBM Plex Sans", sans-serif;
-		font-size: 1.9rem;
-		color: $secondary;
-		line-height: 1.5;
-		font-weight: 600;
-	}
-}
 
 .projectButtons {
 	padding-left: 30px;
@@ -283,19 +284,6 @@ h1 {
 	}
 }
 
-.notePad,
-.wisdom {
-	flex-direction: row-reverse;
-
-	p {
-		padding-left: 0;
-		padding-right: 30px;
-	}
-
-	.projectButtons {
-		padding-left: 0;
-	}
-}
 
 // PROJECT END
 
@@ -385,6 +373,43 @@ h4 {
 	}
 }
 
+.contact {
+	background-color: $secondary;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.buttons {
+		display: flex;
+		flex-direction: column;
+
+		button {
+			height: 50px;
+			background-color: $primary;
+			border: none;
+			color: $secondary;
+			font-size: 1.5rem;
+			font-family: IBM Plex Mono;
+			font-weight: 900;
+
+			&:hover {
+				color: lime;
+			}
+
+			&:active {
+				-webkit-box-shadow: inset 1px 5px 15px -6px #000000; 
+				box-shadow: inset 1px 5px 15px -6px #000000;
+			}
+		}
+	}
+
+	input {
+		font-size: 2rem;
+		width: 225px;
+	}
+}
+
 footer {
 	height: 70px;
 	background-color: $secondary;
@@ -406,30 +431,8 @@ footer {
 		}
 
 		&:hover {
-			color: lighten($primary, 10%);
+			color: lighten(green, 33%);
 		}
 	}
 }
 
-.contactPoints {
-	font-size: 3rem;
-	padding-right: 10px;
-	display: flex;
-
-	i {
-		display: block;
-		padding-right: 5px;
-	}
-
-	a {
-		text-decoration: none;
-		color: darken($primary, 10%);
-		&:visited {
-			color: darken($primary, 10%);
-		}
-
-		&:hover {
-			color: lighten($primary, 10%);
-		}
-	}
-}

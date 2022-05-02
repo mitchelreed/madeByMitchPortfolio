@@ -125,7 +125,7 @@
   }
 
   .contact {
-    height: auto;
+    height: 100vh;
   }
 
   .contactContainer {
@@ -143,6 +143,13 @@
 
   .formContainer {
     width: 100%;
+  }
+}
+
+@media (max-width: 590px) {
+  .projects {
+    font-size: 1.4rem;
+    height: 600px;
   }
 }
 
@@ -168,12 +175,6 @@
       margin: 0;
       text-decoration: none;
       font-size: 2.5rem;
-    }
-  }
-
-  .contact {
-    img {
-      display: none;
     }
   }
 
@@ -225,6 +226,10 @@
     }
   }
 
+  .projects {
+    font-size: 1.1rem;
+  }
+
   .toolKit {
     ul {
       gap: 0;
@@ -251,6 +256,12 @@
     min-height: 700px;
   }
 }
+
+// @media (min-width: 1950px) {
+//   .projects {
+//     height: 1200px;
+//   }
+// }
 
 @media (min-width: 1700px) {
   .header {
