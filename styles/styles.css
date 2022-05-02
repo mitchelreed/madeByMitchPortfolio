@@ -616,118 +616,6 @@ h1 {
   margin-right: 15px;
 }
 
-.skills {
-  height: 100vh;
-  min-height: 600px;
-  background: #ffa05f;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.skillsTitleContainer {
-  width: 50%;
-}
-
-h4 {
-  font-size: 2.9vw;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #4f359b;
-  line-height: 1.5;
-  margin-right: 25px;
-  padding: 10px;
-  margin-bottom: 0;
-  text-decoration: underline;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
-}
-
-.toolKit {
-  width: 80%;
-  min-height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.toolKit img {
-  width: 80px;
-  height: 80px;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-.toolKit i {
-  font-size: 7rem;
-  color: ghostwhite;
-}
-
-.toolKit i.reactIcon {
-  color: #3590d5;
-}
-
-.toolKit .reactIcon:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-animation: reactSpin 6s infinite linear forwards;
-          animation: reactSpin 6s infinite linear forwards;
-}
-
-.toolKit ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 100%;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  border-radius: 20px;
-}
-
-.toolKit li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.toolKit li:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
-  text-shadow: 10px 7px 14px rgba(27, 11, 85, 0.6);
-}
-
-.toolKit li p {
-  padding: 10px;
-  color: #4f359b;
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 900;
-}
-
 .contact {
   background-color: #ffa05f;
   height: 100vh;
@@ -773,7 +661,7 @@ h4 {
 
 .contact input {
   font-size: 2rem;
-  width: 225px;
+  width: 265px;
 }
 
 footer {
@@ -1204,12 +1092,6 @@ nav a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .projectContentContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .projectContentContainer p {
     padding-top: 20px;

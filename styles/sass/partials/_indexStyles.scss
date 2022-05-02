@@ -235,11 +235,14 @@ h1 {
 		}
 	}
 
+	
+
 	.wave {
 		position: absolute;
 		bottom: 0;
 	}
 }
+
 
 
 .projectButtons {
@@ -287,91 +290,6 @@ h1 {
 
 // PROJECT END
 
-// SKILL SECTION
-.skills {
-	height: 100vh;
-	min-height: 600px;
-	background: $secondary;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.skillsTitleContainer {
-	width: 50%;
-}
-
-h4 {
-	font-size: 2.9vw;
-	font-family: "IBM Plex Sans", sans-serif;
-	font-weight: 700;
-	margin-bottom: 30px;
-	color: $primary;
-	line-height: 1.5;
-	margin-right: 25px;
-	padding: 10px;
-	margin-bottom: 0;
-	text-decoration: underline;
-	text-decoration-style: solid;
-}
-
-.toolKit {
-	width: 80%;
-	min-height: 400px;
-	display: flex;
-
-	img {
-		width: 80px;
-		height: 80px;
-		transition: all 0.7s ease;
-	}
-
-	i {
-		font-size: 7rem;
-		color: $text;
-	}
-
-	i.reactIcon {
-		color: rgb(53, 144, 213);
-	}
-
-	.reactIcon:hover {
-		transition: all 0.5s ease;
-		animation: reactSpin 6s infinite linear forwards;
-	}
-
-	ul {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
-		width: 100%;
-		align-content: center;
-		border-radius: 20px;
-	}
-
-	li {
-		display: flex;
-		align-items: center;
-		list-style: none;
-		flex-direction: column;
-		transition: all 0.5s ease;
-
-		&:hover {
-			transform: scale(1.08);
-			text-shadow: 10px 7px 14px rgba(27, 11, 85, 0.6);
-		}
-
-		p {
-			padding: 10px;
-			color: $primary;
-			font-family: "IBM Plex Mono", sans-serif;
-			font-size: 1.5rem;
-			font-weight: 900;
-		}
-	}
-}
 
 .contact {
 	background-color: $secondary;
@@ -406,9 +324,10 @@ h4 {
 
 	input {
 		font-size: 2rem;
-		width: 225px;
+		width: 265px;
 	}
 }
+
 
 footer {
 	height: 70px;

@@ -14,14 +14,5 @@
   "liveSassCompile.settings.autoprefix": [
     "> 1%",
     "last 2 versions"
-  ],
-  "liveServer.settings.port": 5501,
-  "liveServer.settings.root": "/",
-  "liveServer.settings.CustomBrowser": "null",
-  "liveServer.settings.https": {
-    "enable": true,
-    "cert": "/Users/mitchreedmacbook/Documents/madebymitch/madeByMitchPortfolio/localhost.pem",
-    "key": "/Users/mitchreedmacbook/Documents/madebymitch/madeByMitchPortfolio/localhost.key",
-    "passphrase": "asdf"
-  }
+  ]
 }
