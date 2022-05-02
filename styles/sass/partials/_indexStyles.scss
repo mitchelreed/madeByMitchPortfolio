@@ -164,7 +164,7 @@ h1 {
 	z-index: 10;
 }
 
-// spiral portal to sublimation
+// spiral portal to hofman
 .portal {
 	cursor: pointer;
 	position: absolute;
@@ -187,55 +187,14 @@ h1 {
 .projects {
 	height: 900px;
 	background: #3190D0;
-	padding-top: 35px;
 	position: relative;
 	color: $text;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	font-size: 1.8rem;
 	line-height: 3;
 	font-family: "IBM Plex Mono", sans-serif;
-
-	ul li {
-		list-style-type: none;
-
-		a {
-			color: lightgreen;
-
-			&:hover {
-				color: lighten(green, 33%);
-			}
-		}
-	}
-
-	.links {
-		position: absolute;
-		top: 0;
-		z-index: 10;
-	}
-
-	.music,
-	.film {
-		width: 100%;
-		height: auto;
-		display: flex;
-		justify-content: center;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.film {
-		a {
-			color: rgb(0,173,239);
-
-			&:hover {
-				color: lighten(rgb(0,173,239), 33%);
-			}
-		}
-	}
-
-	
 
 	.wave {
 		position: absolute;
@@ -243,6 +202,22 @@ h1 {
 	}
 }
 
+.new-icons {
+	display: flex;
+	justify-content: center;
+	width: 40%;
+	align-items: center;
+}
+
+.new-icons a {
+		text-decoration: none;
+
+		color: yellow;
+
+	&:hover {
+		color: lighten(green, 33%);
+	}
+}
 
 
 .projectButtons {

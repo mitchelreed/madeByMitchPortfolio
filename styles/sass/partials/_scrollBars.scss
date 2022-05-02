@@ -1,7 +1,7 @@
 
 html {
 	scrollbar-width: auto;
-	scrollbar-color: $secondary #3190D0;
+	scrollbar-color: $secondary $secondary;
 }
 
 body::-webkit-scrollbar {

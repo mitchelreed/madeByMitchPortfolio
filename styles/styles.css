@@ -496,67 +496,47 @@ h1 {
 .projects {
   height: 900px;
   background: #3190D0;
-  padding-top: 35px;
   position: relative;
   color: ghostwhite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1.8rem;
   line-height: 3;
   font-family: "IBM Plex Mono", sans-serif;
 }
 
-.projects ul li {
-  list-style-type: none;
-}
-
-.projects ul li a {
-  color: lightgreen;
-}
-
-.projects ul li a:hover {
-  color: #29ff29;
-}
-
-.projects .links {
+.projects .wave {
   position: absolute;
-  top: 0;
-  z-index: 10;
+  bottom: 0;
 }
 
-.projects .music,
-.projects .film {
-  width: 100%;
-  height: auto;
+.new-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 40px;
-  text-align: center;
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.projects .film a {
-  color: #00adef;
+.new-icons a {
+  text-decoration: none;
+  color: yellow;
 }
 
-.projects .film a:hover {
-  color: #98e3ff;
-}
-
-.projects .wave {
-  position: absolute;
-  bottom: 0;
+.new-icons a:hover {
+  color: #29ff29;
 }
 
 .projectButtons {
@@ -699,7 +679,7 @@ footer .madeByMitch:hover {
 
 html {
   scrollbar-width: auto;
-  scrollbar-color: #ffa05f #3190D0;
+  scrollbar-color: #ffa05f #ffa05f;
 }
 
 body::-webkit-scrollbar {
