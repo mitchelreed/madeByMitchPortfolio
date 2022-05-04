@@ -456,6 +456,10 @@ h1 {
           animation: upDown 1s infinite alternate ease;
 }
 
+.circleContainer:hover > .fas {
+  color: lime;
+}
+
 .circle {
   background: #ffa05f;
   border-bottom-left-radius: 70px;
@@ -656,6 +660,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overscroll-behavior-y: contain;
 }
 
 footer .madeByMitch {

@@ -139,7 +139,12 @@ h1 {
 		right: 30px;
 		color: white;
 		animation: upDown 1s infinite alternate ease;
+
 	}
+}
+
+.circleContainer:hover > .fas {
+		color: lime;
 }
 
 .circle {
@@ -178,6 +183,7 @@ h1 {
 		animation: spin 5s infinite linear;
 	}
 }
+
 // HEADER END
 
 // PROJECT SECTION
