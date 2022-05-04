@@ -310,6 +310,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overscroll-behavior-y: contain;
 
 	.madeByMitch {
 		font-family: "IBM Plex Mono", sans-serif;
